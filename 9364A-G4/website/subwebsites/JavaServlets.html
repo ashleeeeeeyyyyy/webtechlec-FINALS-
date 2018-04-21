@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Java Servlets </title>
+</head>
+<body>
+<h2> Java Servlets </h2>
+
+<ul>
+
+<li> Java objects intended to play the role of server components in client-server communications. </li>
+<li> Handles client requests by generating responses to such requests. </li>
+</ul>
+
+    <h3>Part of the Java EE specification</h3>
+
+<h4>Servlet Lifecycle</h4>
+<ul>
+<li>
+INSTANTIATION  -> constructor call…
+<ul>
+<li>Creates an instance of the servlet </li>
+<li>Invoked implicitly by servlet container</li>
+</ul>
+</li>
+<li>
+INITIALIZATION -> init() method
+<ul>
+<li>Invoked only once, intended for startup initialization code </li>
+<li>(requires additional notes) </li>
+</ul>
+</li>
+<li>
+REQUEST HANDLING -> service() method
+<ul>
+<li>Multiple client requests handled by a single multithreaded servlet instance </li>
+<li>This processes the client's requests.</li>
+<li>(requires additional notes) </li>
+</ul>
+</li>
+<li>
+DESTRUCTION -> destroy() method
+<ul>
+(requires additional notes)
+</ul>
+</li>
+</ul>
+    
+<h4>HTTP Servlet </h4>
+<ul>
+<li>
+Java Servlet used to handle HTTP requests
+</li>
+<li>
+Hosted in a web container
+</li>  
+<li>
+service() method call is routed to a doXXX() call, depending on the HTTP request method
+</li>
+    
+<ul>
+doXXX()methods… 2 arguments:
+
+<li>
+HTTPServletRequest
+Used to access information from the request message
+</li>
+<li>
+HTTPServletResponse
+Used to set information in the response message
+</li>
+</ul>
+</ul>
+</body>
+</html>
