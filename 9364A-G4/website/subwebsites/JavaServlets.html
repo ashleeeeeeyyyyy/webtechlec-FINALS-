@@ -24,6 +24,7 @@
         <div class="card-container white-text col s8 red offset-m2">
             <h4>Servlet Lifecycle</h4>
             <ul>
+<<<<<<< HEAD
                 <li>
                     INSTANTIATION -> constructor call
                     <ul>
@@ -46,6 +47,20 @@
                         <li>This processes the client's requests.</li>
                         <li>(requires additional notes) </li>
                         <pre>public void service(ServletRequest req, ServletResponse res)   
+=======
+                <li>Invoked only once, intended for startup initialization code </li>
+                <li>(requires additional notes) </li>
+            <pre>public void init(ServletConfig conf) throws ServletException </pre>
+            </ul>
+        </li>
+        <li>
+        REQUEST HANDLING -> service() method
+        <ul>
+        <li>Multiple client requests handled by a single multithreaded servlet instance </li>
+        <li>It is invoked for each client request.</li>
+        <li>(requires additional notes) </li>
+        <pre>public void service(ServletRequest req, ServletResponse res)   
+>>>>>>> 99bf3b033bb7a599f9e720b2b90c19d57155a4d1
         throws ServletException, IOException  </pre>
                     </ul>
                 </li>
