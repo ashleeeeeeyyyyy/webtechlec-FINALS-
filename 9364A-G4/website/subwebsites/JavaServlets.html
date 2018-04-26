@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../css/materialize/css/materialize.css">
     <link rel="stylesheet" href="../css/materialize/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/css/styles.css">
+    
     <title> Java Servlets </title>
 </head>
-
 <body>
+        <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="../media/images/slu.png" width=10% height=auto> HOME</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Methods</a></li>
+      </ul>
+    </div>
+  </nav>
+    
+    
     <div class="row">
         <div class="card-container white-text col s8 green">
             <h3> Java Servlets </h3>
@@ -45,7 +58,7 @@
                         <li>Multiple client requests handled by a single multithreaded servlet instance </li>
                         <li>This processes the client's requests.</li>
                         <li>(requires additional notes) </li>
-                        <pre>public void service(ServletRequest req, ServletResponse res)   
+                        <pre>public void service(ServletRequest req, ServletResponse res)  </pre>
                 <li>Invoked only once, intended for startup initialization code </li>
                 <li>(requires additional notes) </li>
             <pre>public void init(ServletConfig conf) throws ServletException </pre>
@@ -99,6 +112,9 @@
             </ul>
         </div>
     </div>
+    
+    
+    
 </body>
 
 </html>
