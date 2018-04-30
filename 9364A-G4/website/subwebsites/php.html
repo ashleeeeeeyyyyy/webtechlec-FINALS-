@@ -8,130 +8,150 @@
     <link rel="stylesheet" href="../css/materialize/css/materialize.css">
     <link rel="stylesheet" href="../css/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../css/css/styles3.css">
-    <script href = "../css/javascript/script1.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script href="../css/javascript/script1.js"></script>
     <title>WBTKLC-Php</title>
 </head>
 
-<body>
-    <div class="row">
-        <div class="col s1">1</div>
-        <div class="col s1 yellow">2</div>
-        <div class="col s1">3</div>
-        <div class="col s1 yellow">4</div>
-        <div class="col s1">5</div>
-        <div class="col s1 yellow">6</div>
-        <div class="col s1">7</div>
-        <div class="col s1 yellow">8</div>
-        <div class="col s1">9</div>
-        <div class="col s1 yellow">10</div>
-        <div class="col s1">11</div>
-        <div class="col s1 yellow">12</div>
-    </div>
+<body class=" grey lighten-2">
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">WBTKLC-Php</a>
-            <ul class="right hide-on-med-and-down">
+            <a href="#!" class="brand-logo center">Logo</a>
+            <ul class="left hide-on-med-and-down">
                 <li>
-                    <a href="sass.html">Topic 1</a>
+                    <a href="sass.html">Sass</a>
                 </li>
                 <li>
-                    <a href="badges.html">Topic 2</a>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li class="active">
+                    <a href="collapsible.html">JavaScript</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Modal Structure -->
 
-    <div class=" pink m12 size20">
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">What is PHP?</h2>
+            <p class="grey-text text-darken-3 lighten-3">Insert here brief description of PHP.
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../media/images/img1.jpg">
+        </div>
+    </div>
+    <div class="section white">
         <div class="row">
-            <div class="col s12 m12">
-                <div class="card-content white-text">
-                    <span class="card-title">History of PHP</span>
-                    <p>In the History of PHP we are going to categorize them by topics.Such as the inventor and when was it
-                        invented.Click
-                        <br> <br>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a> for more details.
-                    </p>
-                    <!-- Modal Trigger -->
 
-                    <!-- Modal Structure -->
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons">access_time</i>
+                    <p class="promo-caption">
+                        <b>History of PHP</b>
+                    </p>
+                    <p class="light center">This section contains its versions.its Inventor and how did it became THE php. Click
+                        <a class=" modal-trigger" href="#modal1">here</a>
+                        for more info
+                    </p>
                     <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <h4>Modal Header</h4>
-                            <p>A bunch of text</p>
+                        <div class="modal-content left-align">
+                            <h4>History Of Php</h4>
+                            <li>it is the successor of the PHP/FI.</li>
+                            <li>it is created in 1994 by Rasmus Lerdorf</li>
+                            <li>it's first incarnation was a set of CGI(Common Gateway Interface) binaries that is written in
+                                C language.</li>
+                            <h4>PHP Tools</h4>
+                            <li>also known as Personal Home Page Tools.</li>
+                            <li>it was rewrote to improve it's functionality.</li>
+                            <li>it's source code was released to the public in June 1995</li>
+                            <li>he release the source code to be fixed and improved by other developers.</li>
+                            <h4>FI</h4>
+                            <li>new name of PHP</li>
+                            <li>also known as Forms Interpreter.</li>
+                            <li>it has some basic functionality of PHP</li>
+                            <li>it is rewritten in October 1995 by Rasmus.</li>
+                            <h4>PHP Construction Kit</h4>
+                            <li>new name of FI.</li>
+                            <li>it was considered as an advanced scirptiong interface.</li>
+                            <li>it helps developers to have an easy adoption</li>
+                            <h4>PHP/FI</h4>
+                            <li>new name of PHP construction kit</li>
+                            <li>it was introduced in April 1996.</li>
+                            <li>it's name was a combination of it's past names.</li>
+                            <li>it got it's version 2.0 status.</li>
+                            <li>it was rewritten in November 1997.</li>
+                            <h4>PHP 3</h4>
+                            <li>it was an improved version of PHP/FI 2.0 improved by Andi Gutmans and Zeev Suraski.</li>
+                            <li>it was developed in June 1998.</li>
+                            <li>was the first version closest to PHP.</li>
+                            <li>the meaning of PHP in this version is "PHP: Hypertext Preprocessor"</li>
+                            <h4>PHP 4</h4>
+                            <li>it was officially released in May 2000</li>
+                            <li>it is the improved version of PHP 3.0</li>
+                            <li>it uses the engine named "Zend engine"</li>
+                            <h4>PHP 5</h4>
+                            <li>it was released in July 2004 </li>
+                            <li>it is the improved version of PHP 4.0</li>
+                            <li>it is driven by Zend Engine 2.0</li>
+
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="grey m12 size20">
-        <div class="row">
-            <div class="col s12 m12">
-                <div class="card-content white-text">
-                    <span class="card-title">PHP Data Types</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error numquam maxime, optio molestiae
-                        nihil officia enim repellendus recusandae aperiam aliquid tenetur repellat tempora obcaecati harum?
-                        Eligendi atque soluta beatae.
-                        <br>
-                        <br>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-                    </p>
-                    <!-- Modal Trigger -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <h4>Modal Header</h4>
-                            <p>A bunch of text</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                        </div>
-                    </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons">filter_none</i>
+                    <p class="promo-caption">PHP Data types</p>
+                    <p class="light center">This lesson contains Booleans,Integer,Float,String and the Compound Types. Click
+                        <a>here</a> for mo information</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class=" pink m12 size20">
-        <div class="row">
-            <div class="col s12 m12">
-                <div class="card-content white-text">
-                    <span class="card-title">PHP Tags</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error numquam maxime, optio molestiae
-                        nihil officia enim repellendus recusandae aperiam aliquid tenetur repellat tempora obcaecati harum?
-                        Eligendi atque soluta beatae.
-                        <br>
-                        <br>
-                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Info</a>
-                    </p>
-                    <!-- Modal Trigger -->
-
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <h4>Modal Header</h4>
-                            <p>A bunch of text</p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                        </div>
-                    </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons">looks_4</i>
+                    <p class="promo-caption">Predefined Variables,Exception and Interfaces</p>
+                    <p class="light center">This lesson contains the bullshit of the bullshit and Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Labore voluptate eius officia atque ratione sit. Voluptatum mollitia unde et illo temporibus
+                        quis reprehenderit, porro quam quae quas ipsum error culpa.</p>
                 </div>
             </div>
+
         </div>
     </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../media/images/img2.jpg">
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright blue-grey darken-1">
+            <div class="container">
+                © 2014 Copyright damnNiggaOntheHo0d
+            </div>
+        </div>
+    </footer>
+
+
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type = "text/javascript" src = "../css/materialize/js/materialize.js"></script>
-<script>
-
-      $(document).ready(function(){
-    $('.modal').modal();
-  });
+    <script type="text/javascript" src="../css/materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
     </script>
 </body>
 
