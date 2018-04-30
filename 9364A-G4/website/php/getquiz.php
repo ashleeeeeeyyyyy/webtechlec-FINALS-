@@ -5,8 +5,8 @@
 
     $stmt = $db->stmt_init();
     $stmt->prepare($query);
+    $stmt->execute();
     $stmt->bind_result($quizNo, $question, $choice1, $choice2, $choice3, $keyAnswer);
-
 
     include("includes/quiz.php");
 
@@ -15,7 +15,6 @@
     while($stmt->fetch()){
         $quiz = new Quiz($quizNo, $question, $choice1, $choice2, $choice3, $keyAnswer);
         $quizzes = $quiz;
-        echo "$quizNo";
     }
 
 
