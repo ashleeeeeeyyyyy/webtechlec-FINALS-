@@ -15,6 +15,7 @@
 .parallax-container{
     height: 50vh;
 }
-.edit{
-    height: 300px;
+.section{
+    height: 40vh;
+    margin: 1px;
 }
