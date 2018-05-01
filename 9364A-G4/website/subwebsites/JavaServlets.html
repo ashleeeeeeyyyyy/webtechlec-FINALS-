@@ -2,118 +2,180 @@
 <html lang ="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/materialize/css/materialize.css">
     <link rel="stylesheet" href="../css/materialize/css/materialize.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script href="../css/javascript/script1.js"></script>
     
     <title> Java Servlets </title>
 </head>
 <body>
-        <nav>
-    <div class="nav-wrapper">
+    <nav>
+    <div class="nav-wrapper green">
       <a href="#" class="brand-logo"><img src="../media/images/slu.png" width=10% height=auto> HOME</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">History</a></li>
-        <li><a href="#">Components</a></li>
-        <li><a href="#">Methods</a></li>
-      </ul>
+
     </div>
   </nav>
     
-    
-    <div class="row">
-        <div class="card-container white-text col s8 green">
-            <h3> Java Servlets </h3>
-
-            <ul>
-
-                <li> Java objects intended to play the role of server components in client-server communications. </li>
-                <li> Handles client requests by generating responses to such requests. </li>
-                <li> Part of the Java EE specification</li>
-            </ul>
+    <div class="section green lighten-3">
+        <div class="row container">
+            <h2 class="header">What are Java Servlets?</h2>
+            <p class="grey-text text-darken-3 lighten-3">Java objects intended to play the role of server components in client-server communications.
+            
+            <p class="grey-text text-darken-3 lighten-3">Handles client requests by generating responses to such requests.
+                
+            <p class="grey-text text-darken-3 lighten-3">Part of the Java EE specification
         </div>
-        <div class="card-container white-text col s8 red offset-m2">
-            <h4>Servlet Lifecycle</h4>
-            <ul>
-                <li>
-                    INSTANTIATION -> constructor call
-                    <ul>
-                        <li>Creates an instance of the servlet </li>
-                        <li>Invoked implicitly by servlet container</li>
-                    </ul>
-                </li>
-                <li>
-                    INITIALIZATION -> init() method
-                    <ul>
-                        <li>Invoked only once, intended for startup initialization code </li>
-                        <li>(requires additional notes) </li>
-                        <pre>public void init(ServletConfig conf) throws ServletException </pre>
-                    </ul>
-                </li>
-                <li>
-                    REQUEST HANDLING -> service() method
-                    <ul>
-                        <li>Multiple client requests handled by a single multithreaded servlet instance </li>
-                        <li>This processes the client's requests.</li>
-                        <li>(requires additional notes) </li>
-                        <pre>public void service(ServletRequest req, ServletResponse res)  </pre>
-                <li>Invoked only once, intended for startup initialization code </li>
-                <li>(requires additional notes) </li>
-            <pre>public void init(ServletConfig conf) throws ServletException </pre>
-            </ul>
-        </li>
-        <li>
-        REQUEST HANDLING -> service() method
-        <ul>
-        <li>Multiple client requests handled by a single multithreaded servlet instance </li>
-        <li>It is invoked for each client request.</li>
-        <li>(requires additional notes) </li>
-        <pre>public void service(ServletRequest req, ServletResponse res)   
-        throws ServletException, IOException  </pre>
-                    </ul>
-                </li>
-                <li>
-                    DESTRUCTION -> destroy() method
-                    <ul>
-                        (requires additional notes)
-                        <pre>public void destroy() </pre>
-                    </ul>
-                </li>
-            </ul>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../media/images/img1.jpg">
         </div>
-        <div class="card-container white-text col s8 purple darken-4 offset-m4">
-            <h4>HTTP Servlet </h4>
-            <ul>
-                <li>
-                    Java Servlet used to handle HTTP requests
-                </li>
-                <li>
-                    Hosted in a <strong>web container</strong> which is a component in a java <strong>application server</strong>
-                </li>
-                <li>
-                    service() method call is routed to a doXXX() call, depending on the HTTP request method
-                    <ul>
-                        <li>examples: doGet(), doPost(), doHead(), doPut(), doDelete(), doOptions(), doTrace()</li>
-                    </ul>
-                </li>
+    </div>
+    <div class="section green lighten-3">
+        <div class="row">
 
-                <ul>
-                    doXXX()methods has 2 arguments:
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons">autorenew</i>
+                    <p class="promo-caption">
+                        <b>Servlet Lifecycle</b>
+                    </p>
+                    <p class="light center">This section contains its the servlets lifecycle. Click
+                        <a class=" modal-trigger" href="#modal1">here</a>
+                        for more info
+                    </p>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content left-align">
+                            <h4>Servlet Lifecycle</h4>
+                            <h5>INSTANTIATION</h5>
+                            <li>This requires its contructor call</li>
+                            <li>Creates an instance of the servlet</li>
+                            <li>Invoked implicitly by servlet container</li>
+                            
+                            
+                            <h5>INITIALIZATION</h5>
+                            <li>This utilizes the init() method.</li>
+                            <li>Invoked only once, intended for startup initialization code</li>
+                            <li>(requires additional notes...)</li>
+                            <pre>public void init(ServletConfig conf) throws ServletException  </pre>
+                            
+                            
+                            <h5>REQUEST HANDLING</h5>
+                            <li>This utilizes the service() method.</li>
+                            <li>Multiple client requests handled by a single multithreaded servlet instance.</li>
+                            <li>This processes the client's requests.</li>
+                            <li>(requires additional notes)</li>
+                            <pre>public void service(ServletRequest req, ServletResponse res)   </pre>
+                            
+                            <h5>DESTRUCTION</h5>
+                            <li>This utilizes the destroy() method.</li>
+                            <li>(requires additional notes)</li>
+                            <pre> public void destroy() </pre>
 
-                    <li>
-                        HTTPServletRequest Used to access information from the request message
-                    </li>
-                    <li>
-                        HTTPServletResponse Used to set information in the response message
-                    </li>
-                </ul>
-            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="center promo promo-example">
+                    <i class="large material-icons">http</i>
+                    <p class="promo-caption">HTTP Servlets</p>
+                    <p class="light center">This is a Java Servlet used to handle HTTP request Click
+                        <a class="modal-trigger" href="#modal2">here</a> for mo information</p>
+                    
+                    <div id="modal2" class="modal">
+                        <div class="modal-content left-align">
+                            <h4>HTTP Servlets</h4>
+                            <li>Hosted in a web container which is a component in a java application server</li>
+                            <li>service() method call is routed to a doXXX() call, depending on the HTTP request method </li>
+                            <li> doXXX() methods has 2 arguments:</li>
+                            <ul>
+                                <li>HTTPServletRequest Used to access information from the request message </li>
+                                <li>HTTPServletResponse Used to set information in the response message</li>
+                            </ul>
+                            
+                            <h6>A Few Examples:</h6>
+                            <ul class="collapsible">
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doGet()</div>
+                                  <div class="collapsible-body">
+                                      <span>
+                                      <pre> protected void doGet(HttpServletRequestreq, HttpServletResponse response)throws ServletException, java.io.IOException
+                                      
+                                      <li> This is called by the server, using the service() method, to allow the servlet to handle a GET request. </li>
+                                        <li> This is usually used when a small amount of data like a query will be sent as a request. </li></pre>
+                                      
+                                      </span></div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>getLastModified</div>
+                                  <div class="collapsible-body"><span>
+                                      
+                                      <pre> protected long getLastModified(HttpServletRequest req)
+                                      
+                                      <li>This returns the time the HttpServletRequest object was most recently modified in milliseconds.</li>
+                                      <li>If the time is unknown, it will return a negative number</li></pre>
+
+                                      </span></div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doHead</div>
+                                  <div class="collapsible-body"><span>
+                                      <pre> protected void doHead(HttpServletRequest req,
+                            HttpServletResponse resp)
+                               throws ServletException,
+                                      java.io.IOException
+                                      
+                                      <li> This method is overriden to handle a HEAD request. </li>
+                                
+                                      <li> This only returns the header information same as a get request would do,but without the entity body</li></pre>
+                                      </span></div>
+                                </li>
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doPost</div>
+                                  <div class="collapsible-body"><span>
+                                      <pre> protected void doPost(HttpServletRequest req,
+                      HttpServletResponse resp)
+               throws ServletException,
+                      java.io.IOException
+                                      
+                                      <li> This is called by the service() method to allow the servlet to handle a POST method. </li>
+                                
+                                      <li> The POST method allows the cient to send data with an unlimited length to the server.</li>
+                                      
+                                      <li> This can also be used to actually upload files such as pictures and text files and the like.</li>
+                                      </pre>
+                                      </span></div>
+                                </li>
+                              </ul>
+        
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../media/images/img2.jpg">
         </div>
     </div>
 
-    <footer class="page-footer">
+
+    <footer class="page-footer green darken-1">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
@@ -140,6 +202,24 @@
       </footer>
     
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../css/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="../css/javascript/script1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+        $(document).ready(function(){
+        $('.collapsible').collapsible();
+        });
+        
+    </script>
     
 </body>
 
