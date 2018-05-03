@@ -2,6 +2,7 @@
     font-family: font1;
     src: url(../../fonts/SourceSansPro-Light.otf);
 }
+
 *{
     font-family: font1;
 }
@@ -9,12 +10,15 @@
 .laki{
     height: 40vh;
 }
+
 .img{
     height: 10vh;
 }
+
 .parallax-container{
     height: 50vh;
 }
+
 .edit{
     height: 300px;
 }
