@@ -18,3 +18,11 @@
 .gap{
     margin-top: 10%;
 }
+.parallax-container{
+    height: auto;
+}
+.fontwhite{
+    color: white;
+    font-size: 16px;
+
+}
