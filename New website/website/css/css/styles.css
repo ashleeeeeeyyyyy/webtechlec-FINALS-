@@ -1,0 +1,24 @@
+@font-face {
+    font-family: font1;
+    src: url(../../fonts/SourceSansPro-Light.otf);
+}
+
+body{
+    font-family: font1;
+}
+
+pre{
+    background-color: white;
+    color: black;
+
+}
+
+ul {
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+    list-style-type: disc;
+}
+ul li {
+  list-style-type: circle;
+}

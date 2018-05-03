@@ -1,0 +1,39 @@
+Data Types
+
+    Scalar types
+        boolean
+            -it expresses a truth value.
+            -it can be TRUE or FALSE.
+        integer
+            -it is a non-decimal number between -2,147,483,648 and 2,147,483,647.
+        float
+            -also known as double or real number.
+            -
+        string
+            -is a series of characters where a character is the same as a byte.
+            -it can be specified in four ways:
+                -single quoted (')
+                -double quoted (")
+                -heredoc syntax (<<<)
+                -nowdoc syntax (<<<' ')
+    
+    Compound types
+        array
+            -it is actually an ordered map.
+            -this type is optimized for several different uses like array,list,
+            hash table(implementation of a map),dictionary, stack, queue and many more.
+            -it can be created by using the array(). It uses => to put value.
+            
+        object
+            -is a data type which stores data and information on how to process the data.
+        callable
+            -is a data that can be called as a function.
+        iterable
+            -it accepts any array or object implementing the Traversable interface.
+            -it can be used as a parameter type to indicate that a function requires a set of values.
+    Special types
+        resource
+            -is holding a reference to an external resource. 
+            -it is created and used by special function.
+        NULL
+            -it reqpresents a variable with no value.
