@@ -105,7 +105,7 @@
                             <h6>A Few Examples:</h6>
                             <ul class="collapsible">
                                 <li>
-                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doGet()</div>
+                                  <div class="collapsible-header red lighten-4"><i class="material-icons">arrow_drop_down</i>doGet()</div>
                                   <div class="collapsible-body">
                                       <span>
                                       <pre> protected void doGet(HttpServletRequestreq, HttpServletResponse response)throws ServletException, java.io.IOException
@@ -116,7 +116,7 @@
                                       </span></div>
                                 </li>
                                 <li>
-                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>getLastModified</div>
+                                  <div class="collapsible-header orange lighten-4"><i class="material-icons">arrow_drop_down</i>getLastModified</div>
                                   <div class="collapsible-body"><span>
                                       
                                       <pre> protected long getLastModified(HttpServletRequest req)
@@ -127,7 +127,7 @@
                                       </span></div>
                                 </li>
                                 <li>
-                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doHead</div>
+                                  <div class="collapsible-header yellow lighten-4"><i class="material-icons">arrow_drop_down</i>doHead</div>
                                   <div class="collapsible-body"><span>
                                       <pre> protected void doHead(HttpServletRequest req,
                             HttpServletResponse resp)
@@ -140,7 +140,7 @@
                                       </span></div>
                                 </li>
                                 <li>
-                                  <div class="collapsible-header"><i class="material-icons">arrow_drop_down</i>doPost</div>
+                                  <div class="collapsible-header green lighten-4"><i class="material-icons">arrow_drop_down</i>doPost</div>
                                   <div class="collapsible-body"><span>
                                       <pre> protected void doPost(HttpServletRequest req,
                       HttpServletResponse resp)
@@ -151,8 +151,22 @@
                                 
                                       <li> The POST method allows the cient to send data with an unlimited length to the server.</li>
                                       
-                                      <li> This can also be used to actually upload files such as pictures and text files and the like.</li>
+                                      <li> This can also be used to actually upload files such as long text files and the like.</li>
                                       </pre>
+                                      </span></div>
+                                </li>
+                                
+                                <li>
+                                  <div class="collapsible-header blue lighten-4"><i class="material-icons">arrow_drop_down</i>doPut</div>
+                                  <div class="collapsible-body"><span>
+                                      
+                                      <pre> protected void doPut(HttpServletRequest req,HttpServletResponse resp)
+                                      throws ServletException,java.io.IOException
+                                      
+                                      <li> This is called by the service() method to allow the servlet to handle a PUT method. </li>
+                                      
+                                      <li> This is used by the client to store information on the server. </li></pre>
+
                                       </span></div>
                                 </li>
                               </ul>

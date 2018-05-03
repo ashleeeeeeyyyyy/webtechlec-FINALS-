@@ -4,7 +4,6 @@ Data Types
         boolean
             -it expresses a truth value.
             -it can be TRUE or FALSE.
-            example:
         integer
             -it is a non-decimal number between -2,147,483,648 and 2,147,483,647.
         float
