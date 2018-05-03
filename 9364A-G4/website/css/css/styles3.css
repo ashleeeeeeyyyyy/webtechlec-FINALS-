@@ -7,18 +7,24 @@
     font-family: font1;
 }
 
+<<<<<<< HEAD
 .laki{
     height: 40vh;
 }
 
+=======
+>>>>>>> 5604cb31d79848fb4169efa2068eb2b42ca4bdce
 .img{
     height: 10vh;
 }
 
 .parallax-container{
-    height: 50vh;
+    height: 80vh;
 }
 
 .edit{
-    height: 300px;
+    height: 360px;
+}
+.gap{
+    margin-top: 10%;
 }
