@@ -2,16 +2,26 @@
     font-family: font1;
     src: url(../../fonts/SourceSansPro-Light.otf);
 }
+
 *{
     font-family: font1;
 }
 
+<<<<<<< HEAD
+.laki{
+    height: 40vh;
+}
+
+=======
+>>>>>>> 5604cb31d79848fb4169efa2068eb2b42ca4bdce
 .img{
     height: 10vh;
 }
+
 .parallax-container{
     height: 80vh;
 }
+
 .edit{
     height: 360px;
 }
