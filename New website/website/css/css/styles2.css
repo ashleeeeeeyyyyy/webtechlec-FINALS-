@@ -16,7 +16,7 @@ h1{
 }
 
 .container{
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 .center{
@@ -38,6 +38,7 @@ ul li{
     font-weight: bold;
     margin: 15px;
     border-radius: 15px;
+    
 }
 
 ul li a{

@@ -1,5 +1,6 @@
 .parallax-container{
     height: 60vh;
+    width: 100%;
 }
 
 .brand-logo img{
@@ -7,5 +8,6 @@
 }
 
 h1{
-    font-size: 20vh;
+    font-size: 80px;
+    font-family: Orbitron;
 }
