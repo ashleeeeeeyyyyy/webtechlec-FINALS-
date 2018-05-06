@@ -1,0 +1,49 @@
+<form method = "post">
+<?php
+
+        $username = $_SESSION['username'];
+        $score = 0;
+        $max = sizeof($quizzes);
+        $wrongAnswer = "";
+        $query = "SELECT * FROM user_quiz where user_name = '$username'";
+        $result = mysqli_query($db, $query);
+        if(mysqli_num_rows($result) == 0){
+            if(count($quizzes) != 0){
+                for($i = 0; $i < $max;  $i++){
+                    $quizNo = $quizzes[$i]->get_quizNo();
+                    $question = $quizzes[$i]->get_question();
+                    $choice1 = $quizzes[$i]->get_choice1();
+                    $choice2 = $quizzes[$i]->get_choice2();
+                    $choice3 = $quizzes[$i]->get_choice3();
+                    $keyAnswer = $quizzes[$i]->get_keyAnswer();
+                    $choices = [$choice1, $choice2, $choice3];
+                    ?>
+                    <p class = "questions"><?php echo "$quizNo" ?>. <?php echo "$question" ?> </p>
+                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice1?> style = "background: black">a. <?php echo $choice1?>
+                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice2?>>b. <?php echo $choice2?>
+                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice3?>>c. <?php echo $choice3?> 
+
+                    <?php
+
+                    if(isset($_POST[$quizNo])){
+                        $choice = $_POST[$quizNo];
+                        $query = "INSERT INTO user_quiz(user_name, quizNo, user_choice) VALUES('$username','$quizNo', '$choice')";
+                        mysqli_query($db, $query);
+                        if($keyAnswer === $choice){
+                            $score++;
+                        }else{
+                            $wrongAnswer[$i] = $quizNo;
+                        }
+                    }
+                }
+            }
+        ?>
+        <button type = "submit">Submit</button>
+        <?php
+        }else{
+            echo "You have taken the quiz do you want to take it again?";
+        }
+        ?>
+        <a href = "./subwebsites/quiz/getresult.php"> Review </a>
+            
+</form>

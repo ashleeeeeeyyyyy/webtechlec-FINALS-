@@ -21,4 +21,3 @@
 
 
     $stmt->close();
-    include("showquiz.php");
