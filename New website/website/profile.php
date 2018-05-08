@@ -3,6 +3,5 @@
 
     include 'subwebsites/Includes/header.php';
     include 'subwebsites/Includes/sidenav.php';
-    include 'subwebsites/quiz/getquiz.php';
-    include 'subwebsites/quiz/showquiz.php';
+    include 'subwebsites/Profile/profile.html';
     include 'subwebsites/Includes/footer.php';

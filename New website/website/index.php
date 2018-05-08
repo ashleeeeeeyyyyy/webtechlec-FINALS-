@@ -4,7 +4,7 @@
     if(!isset($_SESSION['username'])){
         include "signup.php";
     } else {
-        include "index.html";
+        include "menu.html";
     }
 
     include "subwebsites/Includes/footer.php";

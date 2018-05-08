@@ -1,29 +1,28 @@
-
 <nav>
     <ul class="sidenav" id="slide-out">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="https://i.pinimg.com/originals/97/05/8f/97058f3862a301c176d0a7dae0edba2a.jpg">
-            </div>
-            <br>
-            <br>
-            <br>
-    </li>
-</div>
-    <li>
-        <a href="#">Profile</a>
-    </li>
-    <li>
-        <a href="./index.html">Home</a>
-    </li>
-    <li>
-        <a href="#">Take the quiz!</a>
-    </li>
-    <li>
-        <a href="./php2.php">More Notes </a>
-    </li>
-</ul>
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://i.pinimg.com/originals/97/05/8f/97058f3862a301c176d0a7dae0edba2a.jpg">
+                </div>
+                <br>
+                <br>
+                <br>
+        </li>
+        </div>
+        <li>
+            <a href="#">Profile</a>
+        </li>
+        <li>
+            <a href="./index.html">Home</a>
+        </li>
+        <li>
+            <a href="#">Take the quiz!</a>
+        </li>
+        <li>
+            <a href="./php2.php">More Notes </a>
+        </li>
+    </ul>
     <div class="nav-wrapper brown darken-3">
         <a href="#!" class="brand-logo center">
             <img src="../media/">
@@ -33,7 +32,7 @@
         </a>
         <ul class="left hide-on-med-and-down">
             <li>
-                <a href="./index.html">Home</a>
+                <a href="./menu.html">Home</a>
             </li>
             <li>
                 <a href="./quiz.php">Take the quiz!</a>
@@ -43,9 +42,26 @@
             </li>
         </ul>
 
+        <ul id="dropdown1" class="dropdown-content">
+            <li>
+                <a href="#!">Change Password</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="./getresult.php">Review quiz</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="./logout.php">Logout</a>
+            </li>
+        </ul>
         <ul class="right hide-on-med-and-down">
             <li>
-                <a href="#">Profile</a>
+                <a href="#!" class="dropdown-trigger" data-target="dropdown1">Profile
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+            </li>
+            </a>
             </li>
         </ul>
     </div>
@@ -339,4 +355,3 @@
         </div>
     </div>
 </footer>
-

@@ -16,6 +16,10 @@
         $(document).ready(function () {
             $('.tabs').tabs();
         });
+
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+        });
     </script>
 
 </body>

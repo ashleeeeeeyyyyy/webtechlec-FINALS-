@@ -20,7 +20,7 @@
         <a href="#">Profile</a>
     </li>
     <li>
-        <a href="./index.html">Home</a>
+        <a href="./menu.html">Home</a>
     </li>
     <li>
         <a href="./quiz.php">Take the quiz!</a>
