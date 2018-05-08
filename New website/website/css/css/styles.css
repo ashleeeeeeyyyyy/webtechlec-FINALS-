@@ -22,3 +22,7 @@ ul {
 ul li {
   list-style-type: circle;
 }
+
+.questions {
+    font: 50px;
+}

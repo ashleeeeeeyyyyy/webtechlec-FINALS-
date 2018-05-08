@@ -10,10 +10,9 @@
         $password = mysqli_real_escape_string($db, $_POST['password']);
         $query = "INSERT INTO user(last_name, first_name, user_name, password) VALUES('$lastName', '$firstName', '$userName', '$password')";
         mysqli_query($db, $query);
-
+        header('Location: index.php');
 
     }
-
 ?>
     <div class="row">
 
@@ -83,7 +82,7 @@
                         <label for="password">Password</label>
 
                     </div>
-                    <input type = "submit" name = "register" class="waves-effect waves-light btn col s10 m6 offset-m3" value = "Create Account">
+                    <button type = "submit" name = "register" class="waves-effect waves-light btn col s10 m6 offset-m3" value = "Create Account">Create Account </button>
             </div>
             </form>
         </div>

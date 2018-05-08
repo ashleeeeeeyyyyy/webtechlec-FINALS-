@@ -1,4 +1,8 @@
 <form method = "post">
+    <div class = "row">
+        <div class = "col m8 offset-m2">
+            <div class = "card center-align" style = "font-size: 50px;">Card Title </div>
+                <div class = "card">
 <?php
 
         $username = $_SESSION['username'];
@@ -18,11 +22,12 @@
                     $keyAnswer = $quizzes[$i]->get_keyAnswer();
                     $choices = [$choice1, $choice2, $choice3];
                     ?>
-                    <p class = "questions"><?php echo "$quizNo" ?>. <?php echo "$question" ?> </p>
-                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice1?> style = "background: black">a. <?php echo $choice1?>
-                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice2?>>b. <?php echo $choice2?>
-                    <input type = "radio" name =<?=$quizNo?> value = <?=$choice3?>>c. <?php echo $choice3?> 
-
+                    <div class ="card-content">
+                        <p class = "questions"><?php echo "$quizNo" ?>. <?php echo "$question" ?> </p>
+                            <p><label><input type = "radio" name =<?=$quizNo?> value = <?=$choice1?> style = "background: black"><span><?php echo $choice1?></span></label></p>
+                            <p><label><input type = "radio" name =<?=$quizNo?> value = <?=$choice2?>><span> <?php echo $choice2?></span></label></p>
+                            <p><label><input type = "radio" name =<?=$quizNo?> value = <?=$choice3?>><span><?php echo $choice3?></span></label></p> 
+                    </div>
                     <?php
 
                     if(isset($_POST[$quizNo])){
@@ -40,10 +45,12 @@
         ?>
         <button type = "submit">Submit</button>
         <?php
-        }else{
-            echo "You have taken the quiz do you want to take it again?";
+        }else{ 
+            
         }
         ?>
-        <a href = "./subwebsites/quiz/getresult.php"> Review </a>
-            
+        <a href = "./getresult.php"> Review </a>
+            </div>
+        </div>
+    </div>
 </form>
