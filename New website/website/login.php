@@ -11,10 +11,9 @@
         if(mysqli_num_rows($result) == 1){
             $_SESSION['message'] = "You are now login";
             $_SESSION['username'] = $_POST['user_name_log'];
-            $a = $_SESSION['username'];
             header("location: index.php");
         }else{
-            echo "Wrong information";
+            echo "<h1>Wrong Information <a href = 'index.php'>click here</a> to go back to the login page</h1>";
         }
     }
 

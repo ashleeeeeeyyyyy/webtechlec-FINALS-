@@ -17,7 +17,7 @@
     </li>
 </div>
     <li>
-        <a href="#">Profile</a>
+        <a href="./profile.php">Profile</a>
     </li>
     <li>
         <a href="./menu.html">Home</a>

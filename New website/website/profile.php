@@ -3,5 +3,6 @@
 
     include 'subwebsites/Includes/header.php';
     include 'subwebsites/Includes/sidenav.php';
-    include 'subwebsites/Profile/profile.html';
+    include 'subwebsites/Includes/nav.php';
+    include 'subwebsites/Profile/changepassword.html';
     include 'subwebsites/Includes/footer.php';

@@ -10,26 +10,12 @@
         $password = mysqli_real_escape_string($db, $_POST['password']);
         $query = "INSERT INTO user(last_name, first_name, user_name, password) VALUES('$lastName', '$firstName', '$userName', '$password')";
         mysqli_query($db, $query);
-        header('Location: index.php');
+
+
 
     }
 ?>
     <div class="row">
-
-        <div class="col s1 yellow">1</div>
-        <div class="col s1">2</div>
-        <div class="col s1 yellow">3</div>
-        <div class="col s1">4</div>
-        <div class="col s1 yellow">5</div>
-        <div class="col s1">6</div>
-        <div class="col s1 yellow">7</div>
-        <div class="col s1">8</div>
-        <div class="col s1 yellow">9</div>
-        <div class="col s1">10</div>
-        <div class="col s1 yellow">11</div>
-        <div class="col s1">12</div>
-
-
         <ul class="tabs">
             <li class="tab col s6 m3 offset-m3">
                 <a href="#login">Sign in</a>
