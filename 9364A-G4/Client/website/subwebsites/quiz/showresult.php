@@ -34,7 +34,6 @@
                 $keyAnswer = $quizzes[$i]->get_keyAnswer();
                 $user_choice = $results[$i]->get_userChoice();
                 $quizNo2 = $results[$i]->get_quizNo(); ?>
-
                 <div class ="card-content">
                 <p class = "questions"><?php echo "$quizNo" ?>. <?php echo "$question" ?> </p>
 

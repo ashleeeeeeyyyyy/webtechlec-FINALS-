@@ -28,7 +28,7 @@
                         <p class = "questions"><?php echo "$quizNo" ?>. <?php echo "$question" ?> </p>
                             <p><label><input type = "radio" name =<?=$quizNo?> value = "<?=$choice1?>"><span><?php echo $choice1?></span></label></p>
                             <p><label><input type = "radio" name =<?=$quizNo?> value = "<?=$choice2?>"><span> <?php echo $choice2?></span></label></p>
-                            <p><label><input type = "radio" name =<?=$quizNo?> value = "<?=$choice3?>"><span><?php echo $choice3?></span></label></p>
+                            <p><label><input type = "radio" name =<?=$quizNo?> value = "<?=$choice3?>"><span><?php echo $choice3?></span></label></p> 
                     </div>
                     <?php
                 }
