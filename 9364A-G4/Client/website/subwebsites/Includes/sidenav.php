@@ -26,6 +26,21 @@
     <li>
         <ul class="collapsible collapsible-accordion">
           <li>
+            <a class="collapsible-header" style = "font-size: 20px;">Topics<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="./java_servlet.php" style = "font-size: 15px;">Javascript</a></li>
+                <li><a href="./php.php" style = "font-size: 15px;">PHP</a></li>
+                <li><a href="./nodeJS.php" style = "font-size: 15px;">Node JS</a></li>
+                <li><a href="./owasp.php" style = "font-size: 15px;">OWASP</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+          <li>
             <a class="collapsible-header" style = "font-size: 20px;">Profile<i class="material-icons">arrow_drop_down</i></a>
             <div class="collapsible-body">
               <ul>
