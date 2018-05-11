@@ -1,3 +1,11 @@
+
+    <footer class="page-footer">
+        <div class="footer-copyright blue-grey darken-1">
+            <div class="container">
+                © 2018 Copyright WBTKLC-FINALS
+            </div>
+        </div>
+    </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="./css/materialize/js/materialize.js"></script>    <script type="text/javascript" src="./css/javascript/script1.js"></script>
     <script>

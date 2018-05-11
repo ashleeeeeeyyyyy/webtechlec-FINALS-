@@ -41,17 +41,17 @@
 
                     if($user_choice != $keyAnswer){
                         if($user_choice == $choice1){ ?>
-                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> style = "background: black" checked disabled><span><?php echo $choice1?></span></label><i class="material-icons">close</i></p>
+                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> checked disabled><span><?php echo $choice1?></span></label><i class="material-icons">close</i></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> disabled><span> <?php echo $choice2?></span></label></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> disabled><span><?php echo $choice3?></span></label></p>                         
             <?php       }else if($user_choice == $choice2){ ?>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> disabled><span><?php echo $choice1?></span></label></p>
-                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> style = "background: black" checked disabled><span> <?php echo $choice2?></span></label><i class="material-icons">close</i></p>
+                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> checked disabled><span> <?php echo $choice2?></span></label><i class="material-icons">close</i></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> disabled><span><?php echo $choice3?></span></label></p>  
             <?php       }else if($user_choice == $choice3){ ?>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> disabled><span><?php echo $choice1?></span></label></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> disabled><span> <?php echo $choice2?></span></label></p>
-                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> style = "background: black" checked disabled><span><?php echo $choice3?></span></label><i class="material-icons">close</i></p>  
+                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> checked disabled><span><?php echo $choice3?></span></label><i class="material-icons">close</i></p>  
             <?php       }else{ ?>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> disabled><span><?php echo $choice1?></span></label></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> disabled><span> <?php echo $choice2?></span></label></p>
@@ -59,12 +59,12 @@
         <?php           }
                     }else if($user_choice == $keyAnswer){
                         if($user_choice == $choice1){ ?>
-                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> style = "background: black" checked disabled><span><?php echo $choice1?></span></label><i class="material-icons">check</i></p>
+                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> checked disabled><span><?php echo $choice1?></span></label><i class="material-icons">check</i></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> disabled><span> <?php echo $choice2?></span></label></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> disabled><span><?php echo $choice3?></span></label></p>                            
             <?php       }else if($user_choice == $choice2){ ?>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> disabled><span><?php echo $choice1?></span></label></p>
-                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> style = "background: black" checked disabled><span> <?php echo $choice2?></span></label><i class="material-icons">check</i></p>
+                            <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice2?> checked disabled><span> <?php echo $choice2?></span></label><i class="material-icons">check</i></p>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice3?> disabled><span><?php echo $choice3?></span></label></p>    
             <?php       }else if($user_choice == $choice3){ ?>
                             <p><label><input class = "with-gap" type = "radio" name =<?=$quizNo?> value = <?=$choice1?> disabled><span><?php echo $choice1?></span></label></p>
