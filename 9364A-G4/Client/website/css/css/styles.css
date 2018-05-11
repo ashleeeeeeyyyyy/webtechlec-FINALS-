@@ -27,3 +27,14 @@ ul li {
 .questions {
     font: 50px !important;
 }
+
+.class ul li{
+    {
+        list-style-type:circle;
+        
+    }
+}
+
+h5 .grey{
+    opacity: 0.7;
+}

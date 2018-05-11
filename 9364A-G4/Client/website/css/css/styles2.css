@@ -100,4 +100,15 @@ ul li:nth-child(3):hover a{
 
 /** Button **/
 
+@media only screen and (max-width: 500px){
+    ul li{
+        list-style: none;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 5px;
+
+        
+    }    
+}
+
   

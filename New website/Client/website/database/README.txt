@@ -1,1 +1,0 @@
-Follow the format us shown in the following images (format.png, format2.png) if you would like to add new questionnaires.

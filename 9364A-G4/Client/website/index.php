@@ -14,4 +14,4 @@
         include "menu.html";
     }
 
-    include "subwebsites/Includes/footer.php";
+    include "subwebsites/Includes/footer2.php";
