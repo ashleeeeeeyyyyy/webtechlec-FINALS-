@@ -20,6 +20,11 @@
         $(document).ready(function(){
             $(".dropdown-trigger").dropdown();
         });
+        
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+
     </script>
 
 </body>

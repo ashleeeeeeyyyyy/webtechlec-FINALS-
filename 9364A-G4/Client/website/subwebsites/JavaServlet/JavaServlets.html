@@ -1,5 +1,5 @@
 <nav>
-    <div class="nav-wrapper grey darken-2">
+    <div class="nav-wrapper grey lighten-1">
         <a href="#!" class="brand-logo center">
             <img src="../../media/images/javalogo.png" width="32%" height="auto">
         </a>
@@ -47,10 +47,12 @@
 </nav>
 
 
-<div class="section green lighten-3">
+<div class="section yellow lighten-3">
     <div class="row container">
+        <a class="waves-effect waves-light btn-large yellow darken-1" href="./Servlet_notes.php"><i class="material-icons right">arrow_forward</i>More notes</a>
+        
         <h2 class="header">What are Java Servlets?</h2>
-        <p class="grey-text text-darken-3 lighten-3">Java objects intended to play the role of server components in client-server communications.
+        <p class="grey-text text-darken-3 lighten-3">These are programs that run on Web or Application server and act as a middle layer between requests coming from a browser and databases or apps on the HTTP server. Java objects intended to play the role of server components in client-server communications. 
 
             <p class="grey-text text-darken-3 lighten-3">Handles client requests by generating responses to such requests.
 
@@ -62,10 +64,10 @@
         <img src="./media/images/img1.jpg">
     </div>
 </div>
-<div class="section green lighten-3">
+<div class="section yellow lighten-3">
     <div class="row">
 
-        <div class="col s12 m6">
+        <div class="col s12 m4">
             <div class="center promo promo-example">
                 <i class="large material-icons">autorenew</i>
                 <p class="promo-caption">
@@ -110,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12 m4">
             <div class="center promo promo-example">
                 <i class="large material-icons">http</i>
                 <p class="promo-caption">HTTP Servlets</p>
@@ -145,7 +147,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header orange lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>getLastModified</div>
+                                    <i class="material-icons">arrow_drop_down</i>getLastModified()</div>
                                 <div class="collapsible-body">
                                     <span>
 
@@ -159,7 +161,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header yellow lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doHead</div>
+                                    <i class="material-icons">arrow_drop_down</i>doHead()</div>
                                 <div class="collapsible-body">
                                     <span>
                                         <pre> protected void doHead(HttpServletRequest req,
@@ -175,7 +177,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header green lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doPost</div>
+                                    <i class="material-icons">arrow_drop_down</i>doPost()</div>
                                 <div class="collapsible-body">
                                     <span>
                                         <pre> protected void doPost(HttpServletRequest req,
@@ -195,7 +197,7 @@
 
                             <li>
                                 <div class="collapsible-header blue lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doPut</div>
+                                    <i class="material-icons">arrow_drop_down</i>doPut()</div>
                                 <div class="collapsible-body">
                                     <span>
 
@@ -211,6 +213,41 @@
                             </li>
                         </ul>
 
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="col s12 m4">
+            <div class="center promo promo-example">
+                <i class="large material-icons">check</i>
+                <p class="promo-caption">
+                    <b>Advantages</b>
+                </p>
+                <p class="light center">This section contains its the advantages in using servlets. Click
+                    <a class=" modal-trigger" href="#modal3">here</a>
+                    for more info
+                </p>
+                <div id="modal3" class="modal">
+                    <div class="modal-content left-align">
+                        <h4>What are its advnatages?</h4>
+                            <h6>
+                            <li> Its performance is slightly increased</li>
+                            <br/>
+                            <li> Servlets are platform-independent, reason being that Java Servlets are run and written in Java.</li>
+                            <br/>
+                            <li> Servlets are executed wothin the address of a Web Server. It is unnecessary to create separate processes to handle every request. </li>
+                            <br/>
+                            <li> Servlets can communicate with other servlets and servers.</li>
+                            <br/>
+                            <li> Servlets enable easy portability across different web servers.</li>
+                            <br/>
+                            <li> Servlets provide all feautures of Java like Exception handling and so.</li>
+                        </h6>
 
                     </div>
                     <div class="modal-footer">
