@@ -1,7 +1,7 @@
 <nav>
 <div class="nav-wrapper brown darken-3">
         <a href="index.php" class="brand-logo center">
-            Course Website
+            Codehead
         </a>
         <a href="#!" data-target="slide-out" class="sidenav-trigger">
             <i class="material-icons">menu</i>

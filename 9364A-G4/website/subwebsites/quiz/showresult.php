@@ -5,6 +5,7 @@
         <div class = "card center-align" style = "font-size: 50px;">Quiz Result </div>
             <div class = "card">
 <?php
+
     $username = $_SESSION['username'];
     include("includes/db.php");
     $query = "SELECT * from user_quiz where user_name = '$username' ORDER BY quizNo ";
@@ -74,18 +75,20 @@
                                     $score++;
                     }
 
-                            ?>
+?>
                     <br>    
                     Correct Answer: <?php echo $keyAnswer ?>
                     </div>
 
-<?php           } ?>
+ <?php           } ?>
                 <form action = "./subwebsites/quiz/delete.php" method = "post">
                     <button type = "submit" class="waves-effect waves-light black btn col offset-m4 m4 s8 offset-s2">Take the quiz again</button>
                 </form>
                 <h4 class = "right-align">Score:<?php echo "$score/$max" ?></h4> 
-<?php   }else{
-            header("location: getresult.php?error=1");
+ <?php   }else{
+    echo '<div class = "card">';
+    echo '<p class = "center-align" style = "color:red; font-size:25px"> Please take the quiz first before viewing the results. <a href = "./quiz.php">Click here </a> to take the quiz';
+    echo '</div>';
         }
         ?>
         </div>

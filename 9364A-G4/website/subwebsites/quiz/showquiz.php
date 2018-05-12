@@ -41,7 +41,9 @@
         </div>
         <?php
         }else{ 
-            header("location: quiz.php?error=1");
+            echo '<div class = "card">';
+            echo '<p class = "center-align" style = "color:red; font-size:25px"> You have already taken the quiz </p>';
+            echo '</div>';
         }
         ?>
         <div class = "card-content">

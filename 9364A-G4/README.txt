@@ -1,10 +1,6 @@
 We've created a file where the steps for our configuration is included.
 
 
-Admin/
-|--
-
-Client/
 |--website/
     |--css/
     |   |--This folder contains the css framework and our css which were used.
