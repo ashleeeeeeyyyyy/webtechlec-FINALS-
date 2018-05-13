@@ -21,7 +21,9 @@
 
                         <div class="col m6 s6 gap fontwhite">
                             <div class="center promo promo-example">
-                                <i class="large material-icons" style="color: white"><a href = "quiz.php">create</a></i>
+                                <i class="large material-icons" style="color: white">
+                                    <a href="quiz.php">create</a>
+                                </i>
                                 <p class="promo-caption" style="color: aliceblue;font-size: 30px">Quiz Reviewer</p>
                                 <p class="light center" style="color: aliceblue;">A quiz reviewer to test whether YOU have learn something from the course.</p>
                             </div>
@@ -62,7 +64,7 @@
             <div class="row">
                 <div class="col m12 s12 ">
                     <h1 style="text-align: center;font-size: 60px;font-family: Orbitron;color:ghostwhite;margin-top: 20%">Basic Lessons</h1>
-                   
+
 
                     <div class="row">
                     </div>
@@ -156,6 +158,14 @@
                                     <span> - it expresses a truth value.
                                         <br> - it can be TRUE or FALSE.
                                         <br> Example:
+                                        <pre>
+                                        <b>
+     <br>&lt? php
+     <br> $foo = True // Line 2 assign the value True to $foo
+     <br> ?&gt
+
+                                        </b>
+                                    </pre>
                                     </span>
                                 </div>
                             </li>
@@ -164,7 +174,16 @@
                                     <i class="material-icons">filter_9</i>Integer</div>
                                 <div class="collapsible-body white">
                                     <span> - it is a non-decimal number between -2,147,483,648 and 2,147,483,647.
-                                        <br>Example:
+                                        <br> Example:
+                                        <pre>
+                                        <b>
+    <br>&lt? php
+    <br> $foo = 68000; // Line 2 assign the value 68000 to $foo
+    <br> $money = 999; // Line 2 assign the value 999 ti $money
+    <br> ?&gt
+
+                                        </b>
+                                    </pre>
                                     </span>
                                 </div>
                             </li>
@@ -172,7 +191,19 @@
                                 <div class="collapsible-header pink lighten-3">
                                     <i class="material-icons">whatshot</i>Float</div>
                                 <div class="collapsible-body white">
-                                    <span>-also known as double or real number.</span>
+                                    <span>-also known as double or real number.
+                                        <br> Example:
+                                        <b>
+                                            <pre>
+     <br>&lt? php
+     <br> $test = 1.246
+    <br> ?&gt
+
+                                        </b>
+                                    </pre>
+                                        </b>
+                                    </span>
+
                                 </div>
                             </li>
                             <li>
@@ -186,7 +217,15 @@
                                         <br> - heredoc syntax (
                                         <<<)<br>
                                             - nowdoc syntax (
-                                            <<< ' ')</span>
+                                            <<< ' ') <br> Example:
+                                                <pre>
+                                                <b>
+     <br>&lt? php
+     <br> echo "This website has String around it";
+     <br> ?&gt
+                                                </b>
+                                                </pre>
+                                    </span>
                                 </div>
                             </li>
                         </ul>
@@ -202,6 +241,19 @@
                                         <br> hash table(implementation of a map),dictionary, stack, queue and many more.
                                         <br> -it can be created by using the array(). It uses => to put value.
                                         <br>
+                                        <br> Example:
+                                        <b>
+                                            <pre>
+        <br>&lt? php
+        <br> array(
+        <br> key => value,
+        <br> key2 => value2
+        <br> key3 => value3
+        <br> )
+        <br> ?&gt
+
+                                        </b>
+                                    </pre>
                                     </span>
                                 </div>
                             </li>
@@ -211,6 +263,23 @@
                                 <div class="collapsible-body white">
                                     <span>
                                         - is a data type which stores data and information on how to process the data.
+                                        <br> Example:
+                                        <b>
+                                            <pre>
+         <br>&lt? php
+         <br> class test
+         <br> {
+         <br> function do_test(){
+         <br> {
+         <br> echo "i am surviving webtek";
+         <br> }
+         <br> }
+         <br> $bar = new test;
+         <br> $bar->do_test();
+        <br> ?&gt
+
+                                        </b>
+                                    </pre>
                                     </span>
                                 </div>
                             </li>
@@ -220,6 +289,19 @@
                                 <div class="collapsible-body white">
                                     <span>
                                         - is a data that can be called as a function.
+                                        <br> Example:
+                                        <b>
+         <pre>                                 
+        <br>&lt? php
+        <br>function my_callback_funtion() // example of a callback function
+        <br> {
+        <br> echo "hello webtek!";
+        <br> }
+        <br>
+        <br> ?&gt
+
+                                        </b>
+                                    </pre>
                                     </span>
                                 </div>
                             </li>
@@ -231,6 +313,19 @@
                                         - it accepts any array or object implementing the Traversable interface.
                                         <br> - it can be used as a parameter type to indicate that a function requires a set
                                         of values.
+                                        <br> Example:
+                                        <pre>
+                                                <b>
+                                        <br> &lt?
+                                        
+     function foo(iterable $iterable) {<br>
+        foreach ($iterable as $value) {<br>
+                                    
+        } <br>
+    }<br>
+<br>?&gt</b></pre>
+
+                                        </b>
                                     </span>
                                 </div>
                             </li>
@@ -272,9 +367,3 @@
 
     </div>
 </div>
-
-
-
-
-
-
