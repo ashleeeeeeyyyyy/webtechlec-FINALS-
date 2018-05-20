@@ -1,0 +1,149 @@
+<div class="section yellow lighten-3">
+    <div class="row container">
+        <ul class="pagination">
+            <li class="waves-effect"><a href="./Servlet_notes.php"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a href="./java_servlet.php">1</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes.php">2</a></li>
+            <li class="active orange"><a href="#!">3</a></li>
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+        
+        <h2 class="header">There's More!</h2>
+        <p class="grey-text text-darken-3 lighten-3"> 
+            Wait what?!
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./media/images/img1.jpg">
+    </div>
+</div>
+<div class="section yellow lighten-3">
+    <div class="row">
+
+        <div class="col s12 m4">
+            <div class=" promo promo-example">
+                <h4 class="promo-caption">
+                    <b>
+                        HTTP Servlets
+                    </b>
+                </h4>
+                        <li>Hosted in a web container which is a component in a java application server</li>
+                        <li>service() method call is routed to a doXXX() call, depending on the HTTP request method </li>
+                        <li> doXXX() methods has 2 arguments:</li>
+                        <ul>
+                            <li>HTTPServletRequest Used to access information from the request message </li>
+                            <li>HTTPServletResponse Used to set information in the response message</li>
+                        </ul>
+
+                        <h6>A Few Examples:</h6>
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doGet()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doGet(HttpServletRequestreq, HttpServletResponse response)throws ServletException, java.io.IOException
+                                      
+                                      <li> This is called by the server, using the service() method, to allow the servlet to handle a GET request. </li>
+                                        <li> This is usually used when a small amount of data like a query will be sent as a request. </li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>getLastModified()</div>
+                                <div class="collapsible-body">
+                                    <span>
+
+                                        <pre> protected long getLastModified(HttpServletRequest req)
+                                      
+                                      <li>This returns the time the HttpServletRequest object was most recently modified in milliseconds.</li>
+                                      <li>If the time is unknown, it will return a negative number</li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doHead()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doHead(HttpServletRequest req,
+                            HttpServletResponse resp)
+                               throws ServletException,
+                                      java.io.IOException
+                                      
+                                      <li> This method is overriden to handle a HEAD request. </li>
+                                
+                                      <li> This only returns the header information same as a get request would do,but without the entity body</li></pre>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doPost()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doPost(HttpServletRequest req,
+                      HttpServletResponse resp)
+               throws ServletException,
+                      java.io.IOException
+                                      
+                                      <li> This is called by the service() method to allow the servlet to handle a POST method. </li>
+                                
+                                      <li> The POST method allows the cient to send data with an unlimited length to the server.</li>
+                                      
+                                      <li> This can also be used to actually upload files such as long text files and the like.</li>
+                                      </pre>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doPut()</div>
+                                <div class="collapsible-body">
+                                    <span>
+
+                                        <pre> protected void doPut(HttpServletRequest req,HttpServletResponse resp)
+                                      throws ServletException,java.io.IOException
+                                      
+                                      <li> This is called by the service() method to allow the servlet to handle a PUT method. </li>
+                                      
+                                      <li> This is used by the client to store information on the server. </li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class=" promo promo-example">
+                <h4 class="promo-caption">
+                    2nd Part
+                </h4>
+            </div>
+        </div>
+        
+         <div class="col s12 m4">
+            <div class="promo promo-example">
+                <h4 class="promo-caption">
+                    3rd part
+                </h4>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./media/images/img2.jpg">
+    </div>
+</div>
+
+
