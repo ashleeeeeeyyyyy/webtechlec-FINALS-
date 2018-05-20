@@ -1,4 +1,3 @@
-
 <form method = "post" action = "./subwebsites/quiz/evaluate.php">
     <div class = "row">
         <div class = "col m8 offset-m2 s12">

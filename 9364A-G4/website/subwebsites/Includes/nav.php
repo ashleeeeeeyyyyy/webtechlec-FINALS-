@@ -25,6 +25,9 @@
             <li>
                 <a href="./quiz.php">Take the quiz!</a>
             </li>
+            <li>
+                <a href = "./addnotes.php">Add Notes!</a>
+            </li>
         </ul>
 
         <ul id="dropdown1" class="dropdown-content">
