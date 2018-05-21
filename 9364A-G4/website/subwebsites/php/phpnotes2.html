@@ -1,11 +1,11 @@
-<div class="parallax-container">
+<div class="parallax-container" style="height: auto">
     <div class="section">
         <div class="container">
             <div class="row">
                 <a class="waves-effect waves-light btn-large brown lighten-1" href="./php.php">
                     <i class="material-icons right">arrow_back</i>Previous notes</a>
                 <div class="col m12 s12 ">
-                    <h1 style="text-align: center;font-size: 60px;font-family: Orbitron;color:ghostwhite;margin-top: 15%" ;>PHP Course Notes</h1>
+                    <h1 style="text-align: center;font-size: 60px;font-family:font1;color:ghostwhite;margin-top: 15%" ;>PHP Course Notes</h1>
                     <p style="text-align:center;color: white;margin-top: 7%;font-size: 20px">Welcome to the Course notes! In preparation forı the big quiz,
                         <br> we have here a set of notes to get you ready and to keep you in track with the topic PHP</p>
                     <div class="row">
@@ -20,13 +20,273 @@
 </div>
 <div class="row">
     <div class="col m8 offset-m2">
+        <h2>History of PHP</h2>
+        <h5>PHP provides a large number of predefined variables to all scripts. The variables represent everything from external
+            variables to built-in environment variables, last error messages to last retrieved headers. </h5>
+        <h4>
+            <b>History Of Php</b>
+        </h4>
+        <li>it is the successor of the PHP/FI.</li>
+        <li>it is created in 1994 by Rasmus Lerdorf</li>
+        <li>it's first incarnation was a set of CGI(Common Gateway Interface) binaries that is written in C language.</li>
+        <h4>
+            <b>PHP Tools</b>
+        </h4>
+        <li>also known as Personal Home Page Tools.</li>
+        <li>it was rewrote to improve it's functionality.</li>
+        <li>it's source code was released to the public in June 1995</li>
+        <li>he release the source code to be fixed and improved by other developers.</li>
+        <h4>
+            <b>FI</b>
+        </h4>
+        <li>new name of PHP</li>
+        <li>also known as Forms Interpreter.</li>
+        <li>it has some basic functionality of PHP</li>
+        <li>it is rewritten in October 1995 by Rasmus.</li>
+        <h4>
+            <b>>PHP Construction Kit</b>
+        </h4>
+        <li>new name of FI.</li>
+        <li>it was considered as an advanced scirptiong interface.</li>
+        <li>it helps developers to have an easy adoption</li>
+        <h4>
+            <b>PHP/FI</b>
+        </h4>
+        <li>new name of PHP construction kit</li>
+        <li>it was introduced in April 1996.</li>
+        <li>it's name was a combination of it's past names.</li>
+        <li>it got it's version 2.0 status.</li>
+        <li>it was rewritten in November 1997.</li>
+        <h4>PHP 3</h4>
+        <li>it was an improved version of PHP/FI 2.0 improved by Andi Gutmans and Zeev Suraski.</li>
+        <li>it was developed in June 1998.</li>
+        <li>was the first version closest to PHP.</li>
+        <li>the meaning of PHP in this version is "PHP: Hypertext Preprocessor"</li>
+        <h4>PHP 4</h4>
+        <li>it was officially released in May 2000</li>
+        <li>it is the improved version of PHP 3.0</li>
+        <li>it uses the engine named "Zend engine"</li>
+        <h4>PHP 5</h4>
+        <li>it was released in July 2004 </li>
+        <li>it is the improved version of PHP 4.0</li>
+        <li>it is driven by Zend Engine 2.0</li>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 s12 ">
+                    <h1 style="text-align: center;font-size: 60px;font-family:font1;color:ghostwhite;margin-top: 10%" ;>Data Types</h1>
+                    <h4 style="text-align: center;font-family:font1;color:ghostwhite;margin-top: 10%">This contains the data types of php such as integers,booleans and more.This lesson's objective is to give you the basic knowledge to declare the variables mentioned below</h4>
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="./media/images/b5.jpg" style="filter: brightness(20%);">
+    </div>
+</div>
+<div class="row">
+    <div class="col m8 offset-m2">
+        <h1>PHP Data Types</h1>
+        <h3>Scalar Data Types</h3>
+        <h5>A data type (or type) is a set of values and operations predefined for those values. PHP interpreter supports such
+            data types as Boolean, integer, float, and string (which are commonly known as scalar data types), compound data
+            types (array and object), and special data types (resource and NULL).</h5>
+        <br>
+        <ul class="collapsible ">
+            <li>
+                <div class="collapsible-header gray">
+                    <i class="material-icons">power_settings_new</i>Boolean</div>
+                <div class="collapsible-body white">
+                    <span> - it expresses a truth value.
+                        <br> - it can be TRUE or FALSE.
+                        <br> Example:
+                        <pre><b> &lt? php
+    <br> $foo = True // Line 2 assign the value True to $foo
+    <br> ?&gt </b>
+</pre>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header  gray">
+                    <i class="material-icons">filter_9</i>Integer</div>
+                <div class="collapsible-body white">
+                    <span> - it is a non-decimal number between -2,147,483,648 and 2,147,483,647.
+                        <br> Example:
+                        <pre> <b> &lt? php
+<br> $foo = 68000; // Line 2 assign the value 68000 to $foo
+<br> $money = 999; // Line 2 assign the value 999 ti $money
+<br> ?&gt</b></pre>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header gray">
+                    <i class="material-icons">whatshot</i>Float</div>
+                <div class="collapsible-body white">
+                    <span>-also known as double or real number.
+                        <br> Example:
+                        <b>
+                            <pre>&lt? php
+                                <br> $test = 1.246
+<br> ?&gt
+</b></pre>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header  gray">
+                    <i class="material-icons">broken_image</i>String</div>
+                <div class="collapsible-body white">
+                    <span> - is a series of characters where a character is the same as a byte.
+                        <br> - it can be specified in four ways:
+                        <br> - single quoted (')
+                        <br> - double quoted (")
+                        <br> - heredoc syntax (
+                        <<<)<br>
+                            - nowdoc syntax (
+                            <<< ' ') <br> Example:
+                                <pre><b>&lt? php
+<br> echo "This website has String around it";
+<br> ?&gt</b></pre>
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Compound Types</h3>
+        <h5>Compound data types allow for multiple items of the same type to be aggregated under a single representative entity.
+            The array and the object fall into this category.</h5>
+            <Br>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">power_settings_new</i>Array</div>
+                    <div class="collapsible-body white">
+                        <span> -it is actually an ordered map.
+                            <br> -this type is optimized for several different uses like array,list,
+                            <br> hash table(implementation of a map),dictionary, stack, queue and many more.
+                            <br> -it can be created by using the array(). It uses => to put value.
+                            <br>
+                            <br> Example:
+                            <b>
+                                <pre>
+<br>&lt? php
+<br> array(
+<br> key => value,
+<br> key2 => value2
+<br> key3 => value3
+<br> )
+<br> ?&gt </b></pre>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">cake</i>Object</div>
+                    <div class="collapsible-body white">
+                        <span>
+                            - is a data type which stores data and information on how to process the data.
+                            <br> Example:
+                            <b>
+                                <pre>
+ <br>&lt? php
+ <br> class test
+ <br> {
+ <br> function do_test(){
+ <br> {
+ <br> echo "i am surviving webtek";
+ <br> }
+ <br> }
+ <br> $bar = new test;
+ <br> $bar->do_test();
+<br> ?&gt
+ </b> </pre>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">cake</i>Callable</div>
+                    <div class="collapsible-body white">
+                        <span>
+                            - is a data that can be called as a function.
+                            <br> Example:
+                            <b>
+                                <pre><br>&lt? php
+<br>function my_callback_funtion() // example of a callback function
+<br> {
+<br> echo "hello webtek!";
+<br> }
+<br>
+<br> ?&gt
+</b>
+ </pre>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">cake</i>iterable</div>
+                    <div class="collapsible-body white">
+                        <span>
+                            - it accepts any array or object implementing the Traversable interface.
+                            <br> - it can be used as a parameter type to indicate that a function requires a set of values.
+                            <br> Example:
+                            <pre> <b>
+ <br> &lt?                              
+function foo(iterable $iterable) {<br>
+foreach ($iterable as $value) {<br>                          
+} <br>}<br> </b></pre>
+
+                            </b>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <h5>Special Types</h5>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">cake</i>Resource</div>
+                    <div class="collapsible-body white">
+                        <span>
+                            - is holding a reference to an external resource.
+                            <br> - it is created and used by special function.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header  gray">
+                        <i class="material-icons">cake</i>NULL</div>
+                    <div class="collapsible-body white">
+                        <span>
+                            -it represents a variable with no value.
+
+                        </span>
+                    </div>
+
+                </li>
+                </li>
+            </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col m8 offset-m2">
         <h2>Predefined Variables</h2>
         <h5>PHP provides a large number of predefined variables to all scripts. The variables represent everything from external
             variables to built-in environment variables, last error messages to last retrieved headers. </h5>
     </div>
 </div>
 
-<div class="row">
+
+<d iv class="row">
     <div class="col m8 offset-m2">
         <ul class="collapsible ">
             <li>
@@ -51,128 +311,128 @@
             </li>
         </ul>
     </div>
-</div>
-<div class="row">
-    <div class="col m8 offset-m2">
-        <h2>Predefined Classes and Interfaces</h2>
-        <h5>PHP provides a large number of predefined variables to all scripts. The variables represent everything from external
-            variables to built-in environment variables, last error messages to last retrieved headers. </h5>
-        <ol class="meaning">
-            <li>
-                <b>Traversal</b> - Abstract base interface that cannot be implemented alone. Instead it must be implemented
-                by either
-                <b>IteratorAggregate </b> or
-                <b>Iterator.</b>
-            </li>
-            <li>
-                <b>Iterator</b> - Interface for external iterators or objects that can be iterated themselves internally.</li>
-            <li>
-                <b>IteratorAggregate</b> - Interface to create an external Iterator.</li>
-            <li>
-                <b>Serializable</b> - Interface to use a custom serializing</li>
-            <li>
-                <b>Closure</b> - used to represent
-                <b>anonymous functions.</b>
-            </li>
-        </ol>
     </div>
-</div>
-<div class="parallax-container">
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col m12 s12 ">
-                    <h1 style="text-align: center;font-size: 60px;font-family: Orbitron;color:ghostwhite;margin-top: 20%" ;>Session Handlers</h1>
+    <div class="row">
+        <div class="col m8 offset-m2">
+            <h2>Predefined Classes and Interfaces</h2>
+            <h5>PHP provides a large number of predefined variables to all scripts. The variables represent everything from external
+                variables to built-in environment variables, last error messages to last retrieved headers. </h5>
+            <ol class="meaning">
+                <li>
+                    <b>Traversal</b> - Abstract base interface that cannot be implemented alone. Instead it must be implemented
+                    by either
+                    <b>IteratorAggregate </b> or
+                    <b>Iterator.</b>
+                </li>
+                <li>
+                    <b>Iterator</b> - Interface for external iterators or objects that can be iterated themselves internally.</li>
+                <li>
+                    <b>IteratorAggregate</b> - Interface to create an external Iterator.</li>
+                <li>
+                    <b>Serializable</b> - Interface to use a custom serializing</li>
+                <li>
+                    <b>Closure</b> - used to represent
+                    <b>anonymous functions.</b>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col m12 s12 ">
+                        <h1 style="text-align: center;font-size: 60px;font-family: font1;color:ghostwhite;margin-top: 20%" ;>Session Handlers</h1>
 
-                    <div class="row">
+                        <div class="row">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="parallax">
+            <img src="./media/images/bg2.jpg" style="filter: brightness(20%);">
+        </div>
     </div>
-    <div class="parallax">
-        <img src="./media/images/wallpaper.jpg" style="filter: brightness(20%);">
-    </div>
-</div>
-<div class="row">
-    <div class="col m8 offset-m2">
-        <h2>Session Handlers</h2>
-        <h5>SessionHandler is a special class that can be used to expose the current internal PHP session save handler by inheritance.
-        </h5>
-        <h5>There are seven methods which wrap the seven internal session save handler callbacks (open, close, read, write, destroy,
-            gc and create_sid).</h5>
-        <ul class="collapsible ">
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::open</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Create new session, or re-initialize existing session. Called internally by PHP when a session starts
-                        either automatically or when session_start() is invoked. This method wraps the internal PHP save
-                        handler defined in the session.save_handler ini setting that was set before this handler was set
-                        by session_set_save_handler().
+    <div class="row">
+        <div class="col m8 offset-m2">
+            <h2>Session Handlers</h2>
+            <h5>SessionHandler is a special class that can be used to expose the current internal PHP session save handler by
+                inheritance.
+            </h5>
+            <h5>There are seven methods which wrap the seven internal session save handler callbacks (open, close, read, write,
+                destroy, gc and create_sid).</h5>
+            <ul class="collapsible ">
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::open</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Create new session, or re-initialize existing session. Called internally by PHP when a session starts
+                            either automatically or when session_start() is invoked. This method wraps the internal PHP save
+                            handler defined in the session.save_handler ini setting that was set before this handler was
+                            set by session_set_save_handler().
 
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::close</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Closes the current session. This method is automatically executed internally by PHP when closing the
-                        session, or explicitly via session_write_close() (which first calls the SessionHandler::write()).This
-                        method wraps the internal PHP save handler defined in the session.save_handler ini setting that was
-                        set before this handler was activated by session_set_save_handler().
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::read</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Reads the session data from the session storage, and returns the result back to PHP for internal processing.
-                        This method is called automatically by PHP when a session is started (either automatically or explicity
-                        with session_start() and is preceeded by an internal call to the SessionHandler::open().
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::create_sid</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Generates and returns a new Session ID.
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::destroy</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Destroys a session. Called internally by PHP with session_regenerate_id() (assuming the $destroy is set
-                        to TRUE, by session_destroy() or when session_decode() fails.
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::gc</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span> Cleans up expired sessions. Called randomly by PHP internally when a session starts or when session_start()
-                        is invoked. The frequency this is called is based on the session.gc_divisor and session.gc_probability
-                        configuration directives.
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-size: 20px">
-                    <i class="material-icons">power_settings_new</i>SessionHandler::write</div>
-                <div class="collapsible-body white" style="font-size: 20px">
-                    <span>Writes the session data to the session storage. Called by normal PHP shutdown, by session_write_close(),
-                        or when session_register_shutdown() fails. PHP will call SessionHandler::close() immediately after
-                        this method returns.
-                    </span>
-                </div>
-            </li>
-        </ul>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::close</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Closes the current session. This method is automatically executed internally by PHP when closing
+                            the session, or explicitly via session_write_close() (which first calls the SessionHandler::write()).This
+                            method wraps the internal PHP save handler defined in the session.save_handler ini setting that
+                            was set before this handler was activated by session_set_save_handler().
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::read</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Reads the session data from the session storage, and returns the result back to PHP for internal
+                            processing. This method is called automatically by PHP when a session is started (either automatically
+                            or explicity with session_start() and is preceeded by an internal call to the SessionHandler::open().
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::create_sid</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Generates and returns a new Session ID.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::destroy</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Destroys a session. Called internally by PHP with session_regenerate_id() (assuming the $destroy
+                            is set to TRUE, by session_destroy() or when session_decode() fails.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::gc</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span> Cleans up expired sessions. Called randomly by PHP internally when a session starts or when session_start()
+                            is invoked. The frequency this is called is based on the session.gc_divisor and session.gc_probability
+                            configuration directives.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" style="font-size: 20px">
+                        <i class="material-icons">power_settings_new</i>SessionHandler::write</div>
+                    <div class="collapsible-body white" style="font-size: 20px">
+                        <span>Writes the session data to the session storage. Called by normal PHP shutdown, by session_write_close(),
+                            or when session_register_shutdown() fails. PHP will call SessionHandler::close() immediately
+                            after this method returns.
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-
