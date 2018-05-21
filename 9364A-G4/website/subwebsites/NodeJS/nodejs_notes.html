@@ -1,0 +1,638 @@
+<div class="parallax-container">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <a class="btn-large light-green darken-3" href="./nodeJS.php">
+                    <i class="material-icons right">arrow_back</i>
+                    Previous notes
+                </a>
+    
+                <div class="col m12 s12 ">
+                    <h1 style="text-align:center; font-size:70px; color:ghostwhite; margin-top:15%;">Node.js Course Website</h1>
+                    <p style="text-align:center;color: white;margin-top: 7%;font-size: 20px">
+                        In this website we would be discussing what Node.js is, it's uses, it's advantages and some of it's frameworks.
+                        Where those notes would be located in the Course Notes button above.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax">
+        <img src="./media/images/bg4.jpg" style="filter: brightness(50%);">
+    </div>
+</div>
+
+<div class="section light-green">
+    <div class="row">
+        <div class="col s12 m12 light-green">
+            <div class="center promo promo-example">
+                <h4 class="promo-caption">Node Frameworks</h4>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Assert</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>Assert</b></h4>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            The assert module provides a simple set of assertion tests that can be used to test in variants.
+                                            A strict and a legacy mode exist, while it is recommended to only use strict mode.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>New assert.AssertionError(options)</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>New assert.AssertionError(options)</b></h4>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>options&ltObject&gt</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:18px; text-align: left;">
+                                            * message &ltstring&gt If provided, the error message is going to be set to this value.<br> 
+                                            * actual &ltany&gt The actual property on the error instance is going to contain this value. Internally used for the actual error input in case e.g., assert.strictEqual()is used.<br>
+                                            * expected &ltany&gt The expected property on the error instance is going to contain this value. Internally used for the expected error input in case e.g., assert.strictEqual() is used.<br>
+                                            * operator &ltstring&gt The operator property on the error instance is going to contain this value. Internally used to indicate what operation was used for comparison (or what assertion function triggered the error).<br>
+                                            * stackStartFn &ltFunction&gt If provided, the generated stack trace is going to remove all frames up to the provided function.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>A subclass of Error that indicates the failure of an assertion.</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:18px; text-align: left;">
+                                            All instances contain the built-in Error properties (message and name) and:<br> 
+                                            * actual &ltany&gt Set to the actual value in case e.g., assert.strictEqual() is used.<br>
+                                            * expected &ltany&gt Set to the expected value in case e.g., assert.strictEqual() is used.<br>
+                                            * generatedMessage &ltboolean&gt Indicates if the message was auto-generated (true) or not.<br>
+                                            * code &ltstring&gt This is always set to the string ERR_ASSERTION to indicate that the error is actually an assertion error.<br>
+                                            * operator &ltstring&gt Set to the passed in operator value.
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Sample Code</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:18px; text-align: left;">
+                                            Const assert = require(‘assert’);
+                                            <br> // Generate an AssertionError to compare the error message later:
+                                            <br> Const { message } = new assert.AssertionError({
+                                            <br> Actual: 1,
+                                            <br> Expected: 2,
+                                            <br> Operator: ‘strictEqual’
+                                            <br> });
+                                            <br> // Verify error output:
+                                            <br> Try {
+                                            <br> assert.strictEqual(1, 2);
+                                            <br> } catch (err) }
+                                            <br> assert(err instance assert.AssertionError);
+                                            <br> assert.strictEqual(err.message, message);
+                                            <br> assert.strictEqual(err.name, ‘AssertionError [ERR_ASSERTION}’);
+                                            <br> assert.strictEqual(err.actual, 1);
+                                            <br> assert.strictEqual(err.expected, 2);
+                                            <br> assert.strictEqual(err.code, ‘ERR_ASSERTION’);
+                                            <br> assert.strictEqual(err.operator, ‘strictEqual’);
+                                            <br> assert.strictEqual(err.generatedMessage, true);
+                                            <br> }
+                                            <br>  
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Strict Mode</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>Strict Mode</b></h4>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>History</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                           * Version 9.9.0 - Added error diffs to the strict mode<br>
+                                           * Version 9.9.0 - Added strict mode to the assert module<br>
+                                           * Version 9.9.0 - Added in: v9.9.0<br> 
+                                        </p>
+
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            When using the strict mode, any assert function will use the equality used in the strict function mode. So assert.deepEqual() will, for example,
+                                            work the same as assert.deepStrictEqual(). On top of that, error messages which involve objects produce an error diff instead of displaying
+                                            both objects. That is not the case for the legacy mode. It can be accessed using:<br><br>
+                                            Const assert = (require(‘assert’).strict);<br><br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Example error diff code:</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Const assert = require(‘assert’).strict;<br>
+                                            assert.deepEqual([[[1, 2, 3]], 4, 5], [[[1, 2, ‘3’]], 4, 5]);<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual … Lines skipped<br>
+                                            //<br>
+                                            // [<br>
+                                            // [<br>
+                                            // …<br>
+                                            // 2,<br>
+                                            // - 3<br>
+                                            // + ‘3’<br>
+                                            // ],<br>
+                                            // …<br>
+                                            // 5<br>
+                                            // ]<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Legacy Mode</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>Legacy Mode</b></h4>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Stability: 0 - Deprecated: Use strict mode instead.<br>
+                                            When accessing assert directly instead of using the strict property, the Abstract Equality Comparison
+                                            will be used for any function without "strict" in its name, such as assert.deepEqual(). It can be accessed using:<br><br>
+                                            Const assert = require(‘assert’);<br><br>
+
+                                            It is recommended to use the strict mode instead as the Abstract Equality Comparison
+                                            can often have surprising results. This is especially true for assert.deepEqual(),
+                                            where the comparison rules are lax:<br><br>
+
+                                            // WARNING: This does not throw an AssertionError!<br>
+                                            assert.deepEqual(/a/gi, new Date());<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>assert(value[, message])</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>assert(value[, message])</b></h4>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Added in: v0.5.9<br>
+                                            * Value &ltany&gt<br>
+                                            * Message &ltany&gt<br><br>
+                                            An alias of assert.ok().
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>assert.deepEqual(actual, expected[, message])</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>assert.deepEqual(actual, expected[, message])</b></h4>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>History</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Version 9.0.0 - The error names and messages are now properly compared<br>
+                                            * Version 8.0.0 - The Set and Map content is also compared<br>
+                                            * Version 6.4.0 & 4.5.0 - Objects with circular references can be used as inputs now<br>
+                                            * Version 5.10.1 & 4.4.3 - Handle non-Uint8Array typed arrays correctly<br>
+                                            * Version 0.1.21 - Added in: Version 0.1.21<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Commands</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Actual &ltany&gt<br>
+                                            * Expected &ltany&gt<br>
+                                            * Message &ltany&gt<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Strict Mode</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            An alias of assert.deepStrictEqual().<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Legacy Mode</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Tests for deep equality between the actual and expected parameters. Primitive values are compared with the Abstract Equality Comparison ( == ).<br>
+                                            Only enumerable "own" properties are considered. The assert.deepEqual() implementation does not test the [[Prototype]] of objects or enumerable own Symbol properties.
+                                            For such checks, consider using assert.deepStrictEqual() instead. assert.deepEqual() can have potentially surprising results. The following example does not throw an
+                                            AssertionError because the properties on the RegExp object are not enumerable:<br>
+
+                                            // WARNING: This does not throw an AssertionError!<br>
+                                            assert.deepEqual(/a/gi, new Date());<br><br>
+
+                                            An exception is made for Map and Set. Maps and Sets have their contained items compared too, as expected. "Deep" equality
+                                            means that the enumerable "own" properties of child objects are evaluated also:<br><br>
+
+                                            const assert = require('assert');
+                                            const obj1 = {<br>
+                                            a: {<br>
+                                            b: 1<br>
+                                            }<br>
+                                            };<br>
+                                            const obj2 = {<br>
+                                            a: {<br>
+                                            b: 2<br>
+                                            }<br>
+                                            };<br>
+                                            const obj3 = {<br>
+                                            a: {<br>
+                                            b: 1<br>
+                                            }<br>
+                                            };<br>
+                                            const obj4 = Object.create(obj1);<br>
+                                            assert.deepEqual(obj1, obj1);<br>
+                                            // OK, object is equal to itself<br>
+                                            assert.deepEqual(obj1, obj2);<br>
+                                            // AssertionError: { a: { b: 1 } } deepEqual { a: { b: 2 } }<br>
+                                            // values of b are different<br>
+                                            assert.deepEqual(obj1, obj3);<br>
+                                            // OK, objects are equal<br>
+                                            assert.deepEqual(obj1, obj4);<br>
+                                            // AssertionError: { a: { b: 1 } } deepEqual {}<br>
+                                            // Prototypes are<br><br>
+
+                                            If the values are not equal, an AssertionError is thrown with a message property set equal to the value of the message parameter.<br>
+                                            If the message parameter is undefined, a default error message is assigned. If the message parameter is an instance of an Error then it will be thrown instead of the AssertionError.<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>assert.deepStrictEqual(actual, expected[, message])</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>assert.deepStrictEqual(actual, expected[, message])</b></h4>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>History</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Version 9.0.0 - Enumerate symbol properties are now compared<br>
+                                            * Version 9.0.0 - The NaN is now compared using the SameValueZero comparison<br>
+                                            * Version 8.5.0 - The Error names and messages are now properlery compared<br>
+                                            * Version 8.0.0 - The Set and Map content is also compared<br>
+                                            * Version 6.4.0 & 4.7.1 - Typed array slices are handled correctly now<br>
+                                            * Version 6.1.0 - Objects with circular references can be used as inputs now<br>
+                                            * Version 5.10.1 & 4.4.3 - Handle non-Uint8array typed arrays correctly<br>
+                                            * Version 1.2.0 - Added in v1.2.0<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Commands</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Actual &ltany&gt<br>
+                                            * Expected &ltany&gt<br>
+                                            * Message &ltany&gt<br>
+
+                                            Tests for deep equality between the actual and expected parameters. "Deep" equality means that the enumerable "own" properties
+                                            of child objects are recursively evaluated also by the following rules.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Comparison Details</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Primitive values are compared using the SameValue Comparison, used by Object.is().<br>
+                                            * Type tags of objects should be the same.<br>
+                                            * [[Prototype]] of objects are compared using the Strict Equality Comparison.<br>
+                                            * Only enumerable "own" properties are considered.<br>
+                                            * Error names and messages are always compared, even if these are not enumerable properties.<br>
+                                            * Enumerable own Symbol properties are compared as well.<br>
+                                            * Object wrappers are compared both as objects and unwrapped values.<br>
+                                            * Object properties are compared unordered.<br>
+                                            * Map keys and Set items are compared unordered.<br>
+                                            * Recursion stops when both sides differ or both sides encounter a circular reference.<br>
+                                            * WeakMap and WeakSet comparison does not rely on their values.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Sample Code</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            const assert = require('assert').strict;<br>
+                                            // This fails because 1 !== '1'.<br>
+                                            assert.deepStrictEqual({ a: 1 }, { a: '1' });<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // {<br>
+                                            // - a: 1<br>
+                                            // + a: '1'<br>
+                                            // }<br><br>
+
+                                            // The following objects don't have own properties<br>
+                                            const date = new Date();<br>
+                                            const object = {};<br>
+                                            const fakeDate = {};<br>
+                                            Object.setPrototypeOf(fakeDate, Date.prototype);<br><br>
+
+                                            // Different [[Prototype]]:
+                                            assert.deepStrictEqual(object, fakeDate);
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // - {}<br>
+                                            // + Date {}<br><br>
+
+                                            // Different type tags:<br>
+                                            assert.deepStrictEqual(date, fakeDate);<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // - 2018-04-26T00:49:08.604Z<br>
+                                            // + Date {}<br>
+                                            assert.deepStrictEqual(NaN, NaN);<br>
+                                            // OK, because of the SameValue comparison<br><br>
+
+                                            // Different unwrapped numbers:<br>
+                                            assert.deepStrictEqual(new Number(1), new Number(2));<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // - [Number: 1]<br>
+                                            // + [Number: 2]<br><br>
+
+                                            assert.deepStrictEqual(new String('foo'), Object('foo'));<br>
+                                            // OK because the object and the string are identical when unwrapped.<br><br>
+                                            assert.deepStrictEqual(-0, -0);<br>
+                                            // OK<br><br>
+                                            
+                                            // Different zeros using the SameValue Comparison:<br>
+                                            assert.deepStrictEqual(0, -0);<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // - 0<br>
+                                            // + -0<br><br>
+
+                                            const symbol1 = Symbol();<br>
+                                            const symbol2 = Symbol();<br>
+                                            assert.deepStrictEqual({ [symbol1]: 1 }, { [symbol1]: 1 });<br>
+                                            // OK, because it is the same symbol on both objects.<br>
+                                            assert.deepStrictEqual({ [symbol1]: 1 }, { [symbol2]: 1 });<br>
+                                            // AssertionError [ERR_ASSERTION]: Input objects not identical:<br>
+                                            // {<br>
+                                            // [Symbol()]: 1<br>
+                                            // }<br><br>
+
+                                            const weakMap1 = new WeakMap();<br>
+                                            const weakMap2 = new WeakMap([[{}, {}]]);<br>
+                                            const weakMap3 = new WeakMap();<br>
+                                            weakMap3.unequal = true;<br><br>
+
+                                            assert.deepStrictEqual(weakMap1, weakMap2);<br>
+                                            // OK, because it is impossible to compare the entries<br>
+                                            // Fails because weakMap3 has a property that weakMap1 does not contain:<br>
+                                            assert.deepStrictEqual(weakMap1, weakMap3);<br>
+                                            // AssertionError: Input A expected to strictly deep-equal input B:<br>
+                                            // + expected - actual<br>
+                                            // WeakMap {<br>
+                                            // - [items unknown]<br>
+                                            // + [items unknown],<br>
+                                            // + unequal: true<br>
+                                            // }<br><br>
+
+                                            If the values are not equal, an AssertionError is thrown with a message property set equal to the value of the message parameter.<br>
+                                            If the message parameter is undefined, a default error message is assigned. If the message parameter is an instance of an Error then it will be thrown instead of the AssertionError.<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>assert.doesNotReject(block[, error][, message])</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h4 style="text-align: left;"><b>assert.doesNotReject(block[, error][, message])</b></h4>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Added in: Version 10.0.0<br>
+                                            * Block &ltFunction&gt & &ltPromise&gt<br>
+                                            * Error &ltRegExp&gt & &ltFunction&gt<br>
+                                            * Message &ltany&gt<br><br>
+
+                                            Awaits the block promise or, if block is a function, immediately calls the function and awaits the returned promise to complete.<br>
+                                            It will then check that the promise is not rejected. If block is a function and it throws an error synchronously, assert.doesNotReject() will return a rejected Promise with that error.<br><br>
+                                            If the function does not return a promise, assert.doesNotReject() will return a rejected Promise with an ERR_INVALID_RETURN_VALUE error. In both cases the error handler is skipped.<br><br>
+                                            
+                                            Please note: Using assert.doesNotReject() is actually not useful because there is little benefit by catching a rejection and then rejecting it again.
+                                            Instead, consider adding a comment next to the specific code path that should not reject and keep error messages as expressive as possible.
+                                            Besides the async nature to await the completion behaves identically to assert.doesNotThrow().<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Sample Code</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            (async () => {<br>
+                                            await assert.doesNotReject(<br>
+                                            async () => {<br>
+                                            throw new TypeError('Wrong value');<br>
+                                            },<br>
+                                            SyntaxError<br>
+                                            );<br>
+                                            })();<br>
+                                            assert.doesNotReject(Promise.reject(new TypeError('Wrong value')))<br>
+                                            .then(() => {<br>
+                                            // ...
+                                            });<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section light-green">
+    <div class="row">
+        <div class="col s12 m12 light-green">
+            <div class="center promo promo-example">
+                <h4 class="promo-caption">Node Frameworks</h4>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Sinatra Like Framework</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Express.js</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.<br>
+                                            It also provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Koa.js</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Koa is a new web framework designed by the team behind Express, which aims to be a smaller, more expressive, and more robust foundation for web applications and APIs.<br>
+                                            Through leveraging generators Koa allows you to ditch callbacks and greatly increase error-handling.<br>
+                                            Koa does not bundle any middleware within core, and provides an elegant suite of methods that make writing servers fast and enjoyable.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Total.js</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Total.js Framework is a full-featured Node.js framework that effectively improves the most important aspects of your project during its lifetime.<br>
+                                            Super fast development, extremely low maintenance costs, rock solid stability, incredible performance and easy scaling. It's our core for all projects.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Other Sinatra Like Framework</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Hapi.js<br>
+                                            * Flatiron.js<br>
+                                            * Locomotive.js<br>
+                                            * TWEE.IO<br>
+                                            * Diet.js<br>
+                                            * Flicker.js<br>
+                                            * ZinkyJS<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Rails Like Framework</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Sails.js</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Sails is compatible with any front-end: Angular, React, iOS, Android, Windows Phone, custom hardware, or something else entirely.<br>
+                                            Sails bundles a powerful ORM, Waterline, which provides a simple data access layer that just works, no matter what database you're using.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>ThinkJS</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            ThinkJS is a future-oriented Node.js framework that integrates a number of project best practices to make enterprise-level development so simple and efficient.<br>
+                                            Starting from 3.0, the framework is based on Koa 2.x implementation and is compatible with all Koa features.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Strapi</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            The most advanced open-source Content Management Framework to build powerful API with no effort. Extensible plugins system included.<br>
+                                            Install auth system, content management, custom plugins, and more, in seconds.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Other Rails Like Framework</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * Nodal<br>
+                                            * CompundJS<br>
+                                            * Geddy<br>
+                                            * Adonis<br>
+                                            * Trails<br>
+                                            * KambojaJS<br>
+                                            * JS-Web<br>
+                                            * FoalTS<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header white">
+                            <i class="material-icons">arrow_drop_down</i>
+                            <h6>Full Stack Framework</h6>
+                        </div>
+
+                        <div class="collapsible-body light-green lighten-3">
+                            <span>
+                                <ul>
+                                    <li>
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Meteor</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Meteor is a full-stack JavaScript platform for developing modern web and mobile applications.<br>
+                                            Meteor includes a key set of technologies for building connected-client reactive applications, a build tool, and a curated set of packages from the Node.js and general JavaScript community.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Keystone.js</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Keystone is designed to make complicated things simple, without limiting the power or flexibility of node.js or the frameworks it is built on.<br>
+                                            KeystoneJS makes it easy to build database-driven websites, applications and APIs in node.js. Under the hood, KeystoneJS uses the express.js web server framework, and a MongoDB database via the mongoose object modelling framework.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>MEAN.io</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            Mean.io is the result of an immense community effort by hundreds of developers and many companies.<br>
+                                            MEAN stands for MongoDB, Express, AngularJS and Node.js.<br>
+                                        </p>
+
+                                        <h5 style="padding-left:30pt; padding-right:30pt; text-align: left;"><b>Other Full Stack Framework</b></h5>
+                                        <p style="padding-left:30pt; padding-right:30pt; font-size:20px; text-align: left;">
+                                            * AllcountJS<br>
+                                            * Derby<br>
+                                            * Feathers<br>
+                                            * SocketCluster<br>
+                                            * SocketStream<br>
+                                            * MEAN.js<br>
+                                            * Meatier<br>
+                                            * Mojito<br>
+                                            * Seeds.js<br>
+                                            * SANE<br>
+                                            * COKE<br>
+                                            * Catberry<br>
+                                            * etc.<br>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
