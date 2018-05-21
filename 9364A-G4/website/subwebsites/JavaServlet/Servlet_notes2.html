@@ -1,0 +1,144 @@
+<div class="section yellow lighten-3">
+    <div class="row container">
+        <ul class="pagination center">
+            <li class="waves-effect"><a href="./Servlet_notes.php"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a href="./java_servlet.php">1</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes.php">2</a></li>
+            <li class="active orange"><a href="#!">3</a></li>
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+        
+        <h2 class="header">Course Notes</h2>
+        <h5 class="grey-text text-darken-3 lighten-3"> 
+            What better way to prepare for a quiz than having notes by your side? The course notes assist in reviewing, where users receive a quick overview of some topics </h5>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./media/images/img1.jpg">
+    </div>
+</div>
+<div class="section yellow lighten-2">
+    <div class="row">
+
+        <div class="col s12 m12">
+            <div class=" promo promo-example">
+                <h3 class="promo-caption">
+                    <b>
+                        HTTP Servlets
+                    </b>
+                </h3>
+                        <li style="font-size: 20px;">Hosted in a web container which is a component in a java application server</li>
+                        <li style="font-size: 20px;">service() method call is routed to a doXXX() call, depending on the HTTP request method </li>
+                        <li style="font-size: 20px;"> doXXX() methods has 2 arguments:</li>
+                        <ul>
+                            <li style="font-size: 20px;">HTTPServletRequest Used to access information from the request message </li>
+                            <li style="font-size: 20px;">HTTPServletResponse Used to set information in the response message</li>
+                        </ul>
+
+                        <h6 style="font-size: 20px;"s>A Few Examples:</h6>
+                        <ul class="collapsible">
+                            <li style="font-size: 20px;">
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doGet()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doGet(HttpServletRequestreq, HttpServletResponse response)throws ServletException, java.io.IOException
+                                      
+                                      <li style="font-size: 20px;"> This is called by the server, using the service() method, to allow the servlet to handle a GET request. </li>
+                                        <li style="font-size: 20px;"> This is usually used when a small amount of data like a query will be sent as a request. </li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="font-size: 20px;">
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>getLastModified()</div>
+                                <div class="collapsible-body">
+                                    <span>
+
+                                        <pre> protected long getLastModified(HttpServletRequest req)
+                                      
+                                      <li style="font-size: 20px;">This returns the time the HttpServletRequest object was most recently modified in milliseconds.</li>
+                                      <li style="font-size: 20px;">If the time is unknown, it will return a negative number</li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="font-size: 20px;">
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doHead()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doHead(HttpServletRequest req,
+                            HttpServletResponse resp)
+                               throws ServletException,
+                                      java.io.IOException
+                                      
+                                      <li style="font-size: 20px;"> This method is overriden to handle a HEAD request. </li>
+                                
+                                      <li style="font-size: 20px;"> This only returns the header information same as a get request would do,but without the entity body</li></pre>
+                                    </span>
+                                </div>
+                            </li>
+                            <li style="font-size: 20px;">
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doPost()</div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <pre> protected void doPost(HttpServletRequest req,
+                      HttpServletResponse resp)
+               throws ServletException,
+                      java.io.IOException
+                                      
+                                      <li style="font-size: 20px;"> This is called by the service() method to allow the servlet to handle a POST method. </li>
+                                
+                                      <li style="font-size: 20px;"> The POST method allows the cient to send data with an unlimited length to the server.</li>
+                                      
+                                      <li style="font-size: 20px;"> This can also be used to actually upload files such as long text files and the like.</li>
+                                      </pre>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li style="font-size: 20px;">
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i>doPut()</div>
+                                <div class="collapsible-body">
+                                    <span>
+
+                                        <pre> protected void doPut(HttpServletRequest req,HttpServletResponse resp)
+                                      throws ServletException,java.io.IOException
+                                      
+                                      <li style="font-size: 20px;"> This is called by the service() method to allow the servlet to handle a PUT method. </li>
+                                      
+                                      <li style="font-size: 20px;"> This is used by the client to store information on the server. </li></pre>
+
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="section yellow lighten-3">
+    <div class="row container">
+        <ul class="pagination center">
+            <li class="waves-effect"><a href="./Servlet_notes.php"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a href="./java_servlet.php">1</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes.php">2</a></li>
+            <li class="active orange"><a href="#!">3</a></li>
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./media/images/img2.jpg">
+    </div>
+</div>
+
+

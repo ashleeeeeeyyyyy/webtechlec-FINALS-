@@ -1,13 +1,22 @@
 <div class="section yellow lighten-3">
     <div class="row container">
-        <a class="waves-effect waves-light btn-large yellow darken-1" href="./Servlet_notes.php"><i class="material-icons right">arrow_forward</i>More notes</a>
+        <ul class="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active orange"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes.php">2</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes2.php">3</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes.php"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
         
-        <h2 class="header">What are Java Servlets?</h2>
-        <p class="grey-text text-darken-3 lighten-3">These are programs that run on Web or Application server and act as a middle layer between requests coming from a browser and databases or apps on the HTTP server. Java objects intended to play the role of server components in client-server communications. 
+        <h2 class="header">Java Servlets</h2>
+        <h5 class="grey-text text-darken-3 lighten-3">These are programs that run on Web or Application server and act as a middle layer between requests coming from a browser and databases or apps on the HTTP server. Java objects intended to play the role of server components in client-server communications. 
 
-            <p class="grey-text text-darken-3 lighten-3">Handles client requests by generating responses to such requests.
+            <h5 class="grey-text text-darken-3 lighten-3">Handles client requests by generating responses to such requests.
 
-                <p class="grey-text text-darken-3 lighten-3">Part of the Java EE specification
+                <h5 class="grey-text text-darken-3 lighten-3">Part of the Java EE specification
+            </h5>
+        </h5>
+        </h5>
     </div>
 </div>
 <div class="parallax-container">
@@ -18,174 +27,98 @@
 <div class="section yellow lighten-3">
     <div class="row">
 
-        <div class="col s12 m4">
-            <div class="center promo promo-example">
-                <i class="large material-icons">autorenew</i>
-                <p class="promo-caption">
-                    <b>Servlet Lifecycle</b>
-                </p>
-                <p class="light center">This section contains its the servlets lifecycle. Click
-                    <a class=" modal-trigger" href="#modal1">here</a>
-                    for more info
-                </p>
-                <div id="modal1" class="modal">
-                    <div class="modal-content left-align">
-                        <h4>Servlet Lifecycle</h4>
-                        <h5>INSTANTIATION</h5>
-                        <li>This requires its contructor call</li>
-                        <li>Creates an instance of the servlet</li>
-                        <li>Invoked implicitly by servlet container</li>
-
-
-                        <h5>INITIALIZATION</h5>
-                        <li>This utilizes the init() method.</li>
-                        <li>Invoked only once, intended for startup initialization code</li>
-                        <li>(requires additional notes...)</li>
-                        <pre>public void init(ServletConfig conf) throws ServletException  </pre>
-
-
-                        <h5>REQUEST HANDLING</h5>
-                        <li>This utilizes the service() method.</li>
-                        <li>Multiple client requests handled by a single multithreaded servlet instance.</li>
-                        <li>This processes the client's requests.</li>
-                        <li>(requires additional notes)</li>
-                        <pre>public void service(ServletRequest req, ServletResponse res)   </pre>
-
-                        <h5>DESTRUCTION</h5>
-                        <li>This utilizes the destroy() method.</li>
-                        <li>(requires additional notes)</li>
-                        <pre> public void destroy() </pre>
-
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="center promo promo-example">
-                <i class="large material-icons">http</i>
-                <p class="promo-caption">HTTP Servlets</p>
-                <p class="light center">This is a Java Servlet used to handle HTTP request Click
-                    <a class="modal-trigger" href="#modal2">here</a> for mo information</p>
-
-                <div id="modal2" class="modal">
-                    <div class="modal-content left-align">
-                        <h4>HTTP Servlets</h4>
-                        <li>Hosted in a web container which is a component in a java application server</li>
-                        <li>service() method call is routed to a doXXX() call, depending on the HTTP request method </li>
-                        <li> doXXX() methods has 2 arguments:</li>
-                        <ul>
-                            <li>HTTPServletRequest Used to access information from the request message </li>
-                            <li>HTTPServletResponse Used to set information in the response message</li>
-                        </ul>
-
-                        <h6>A Few Examples:</h6>
-                        <ul class="collapsible">
-                            <li>
-                                <div class="collapsible-header red lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doGet()</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <pre> protected void doGet(HttpServletRequestreq, HttpServletResponse response)throws ServletException, java.io.IOException
-                                      
-                                      <li> This is called by the server, using the service() method, to allow the servlet to handle a GET request. </li>
-                                        <li> This is usually used when a small amount of data like a query will be sent as a request. </li></pre>
-
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header orange lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>getLastModified()</div>
-                                <div class="collapsible-body">
-                                    <span>
-
-                                        <pre> protected long getLastModified(HttpServletRequest req)
-                                      
-                                      <li>This returns the time the HttpServletRequest object was most recently modified in milliseconds.</li>
-                                      <li>If the time is unknown, it will return a negative number</li></pre>
-
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
+        <div class="col s12 m6">
+            <div class="promo promo-example">
+                <h4 class="promo-caption">
+                    <b>Servlet Lifecycle</b> </h4>
+                    <ul class="collapsible">
+                        <li>
                                 <div class="collapsible-header yellow lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doHead()</div>
+                                    <i class="material-icons">arrow_drop_down</i><h6>INSTANTIATION</h6></div>
                                 <div class="collapsible-body">
                                     <span>
-                                        <pre> protected void doHead(HttpServletRequest req,
-                            HttpServletResponse resp)
-                               throws ServletException,
-                                      java.io.IOException
-                                      
-                                      <li> This method is overriden to handle a HEAD request. </li>
-                                
-                                      <li> This only returns the header information same as a get request would do,but without the entity body</li></pre>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header green lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doPost()</div>
-                                <div class="collapsible-body">
-                                    <span>
-                                        <pre> protected void doPost(HttpServletRequest req,
-                      HttpServletResponse resp)
-               throws ServletException,
-                      java.io.IOException
-                                      
-                                      <li> This is called by the service() method to allow the servlet to handle a POST method. </li>
-                                
-                                      <li> The POST method allows the cient to send data with an unlimited length to the server.</li>
-                                      
-                                      <li> This can also be used to actually upload files such as long text files and the like.</li>
-                                      </pre>
-                                    </span>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="collapsible-header blue lighten-4">
-                                    <i class="material-icons">arrow_drop_down</i>doPut()</div>
-                                <div class="collapsible-body">
-                                    <span>
-
-                                        <pre> protected void doPut(HttpServletRequest req,HttpServletResponse resp)
-                                      throws ServletException,java.io.IOException
-                                      
-                                      <li> This is called by the service() method to allow the servlet to handle a PUT method. </li>
-                                      
-                                      <li> This is used by the client to store information on the server. </li></pre>
+                                        <ul>
+                                        <li>This requires its contructor call</li>
+                                            <br/>
+                                        <li>Creates an instance of the servlet</li>
+                                            <br/>
+                                        <li>Invoked implicitly by servlet container</li>
+                                        </ul>
 
                                     </span>
                                 </div>
                             </li>
-                        </ul>
+                        <li>
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i><h6>INITIALIZATION</h6></div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul>
+                                        <li>This utilizes the init() method.</li>
+                                            <br>
+                                        <li>Invoked only once, intended for startup initialization code</li>
+                                            <br>
+                                        </ul>
+                                        
+                                        <pre>public void init(ServletConfig conf) throws ServletException  </pre>
 
 
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                    </div>
-                </div>
+                                    </span>
+                                </div>
+                            </li>
+                        <li>
+                                <div class="collapsible-header yellow lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i><h6>REQUEST HANDLING</h6></div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul>
+                                        <li>This utilizes the service() method.</li>
+                                            <br>
+                                        <li>Multiple client requests handled by a single multithreaded servlet instance.</li>
+                                            <br>
+                                        <li>This processes the client's requests.</li>
+                                        </ul>
+                                        
+                                        <pre>public void service(ServletRequest req, ServletResponse res)   </pre>
+
+
+                                    </span>
+                                </div>
+                            </li>
+                        <li>
+                                <div class="collapsible-header orange lighten-4">
+                                    <i class="material-icons">arrow_drop_down</i><h6>DESTRUCTION</h6></div>
+                                <div class="collapsible-body">
+                                    <span>
+                                        <ul>
+                                        <li>This utilizes the destroy() method.</li>
+                                            <br>
+                                        
+                                        <pre> public void destroy() </pre>
+                                        </ul>
+
+
+                                    </span>
+                                </div>
+                            </li>
+
+                        
+                        
+                    
+                    </ul>
+                
+
+                        
+
             </div>
         </div>
         
-         <div class="col s12 m4">
-            <div class="center promo promo-example">
-                <i class="large material-icons">check</i>
-                <p class="promo-caption">
+        
+         <div class="col s12 m6">
+            <div class="promo promo-example">
+                <h4 class="promo-caption">
                     <b>Advantages</b>
-                </p>
-                <p class="light center">This section contains its the advantages in using servlets. Click
-                    <a class=" modal-trigger" href="#modal3">here</a>
-                    for more info
-                </p>
-                <div id="modal3" class="modal">
-                    <div class="modal-content left-align">
-                        <h4>What are its advnatages?</h4>
+                </h4>
                             <h6>
                             <li> Its performance is slightly increased</li>
                             <br/>
@@ -200,11 +133,6 @@
                             <li> Servlets provide all feautures of Java like Exception handling and so.</li>
                         </h6>
 
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                    </div>
-                </div>
             </div>
         </div>
 

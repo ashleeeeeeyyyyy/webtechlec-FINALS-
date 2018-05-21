@@ -1,10 +1,16 @@
 
 <div class="section yellow lighten-3">
     <div class="row container">
-        <a class="waves-effect waves-light btn-large yellow darken-1" href="./java_servlet.php"><i class="material-icons left">arrow_back</i>Previous Notes</a>
+        <ul class="pagination">
+            <li class="waves-effect"><a href="./java_servlet.php"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a href="./java_servlet.php">1</a></li>
+            <li class="active orange"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes2.php">3</a></li>
+            <li class="waves-effect"><a href="./Servlet_notes2.php"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
         <h2 class="header"> Servlet Creation</h2>
         
-        <p class="grey-text text-darken-3 lighten-3"> Java Servlets are mostly based on the programming language JAVA. This is why using servlets would also mean: a user must program to get their desired output. </p>
+        <h5 class="grey-text text-darken-3 lighten-3"> Java Servlets are mostly based on the programming language JAVA. This is why using servlets would also mean: a user must program to get their desired output. </h5>
 
     </div>
 </div>
@@ -16,22 +22,21 @@
 
 <div class="section yellow lighten-3">
     <div class="row">
-        <div class="col s12 m12">
-            <div class="center promo promo-example">
-                <i class="large material-icons">format_list_bulleted</i>
-                <p class="promo-caption">
+        <div class="col s12 m6">
+                <h4 class="promo-caption">
                     <b>Prerequisites</b>
-                </p>
-                <p class="light center">Java servlets require other application/software to utilize its full potential. Click
-                    <a class=" modal-trigger" href="#modal1">here</a>
-                    for more info
-                </p>
-                <div id="modal1" class="modal yellow lighten-4">
-                    <div class="modal-content left-align">
+                </h4>
+                <h5 class="light center">Java servlets require other application/software to utilize its full potential.
+                </h5>
                         <h4>Java Development Kit (JDK)</h4>
-                            <p> Like any other Java-inclusive application, servlets would also require the JDK. Download JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Here</a>.</p>
+                            <h5> Like any other Java-inclusive application, servlets would also require the JDK.</h5>
+            
+                            <br>
+                            <h6>Download JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Here</a>.</h6>
+            
+                            <br>
                         
-                        <p> Once it is finished downloading, follow the given installation guide then configure the setup.</p>
+                        <h5> Once it is finished downloading, follow the given installation guide then configure the setup.</h5>
                         
                          <div class="slider">
                             <ul class="slides">
@@ -70,7 +75,12 @@
                         
                         <h4>Web Server - Tomcat</h4>
                         
-                            <p>Web Servers use HTTP to serve the files that form web pages, in response to their requests. Basically, that is also what a servlet does, and Tomcat is used as its main framework. Download Apache Tomcat <a href="https://tomcat.apache.org/download-70.cgi" target="_blank">here</a>.</p>
+                            <h5>Web Servers use HTTP to serve the files that form web pages, in response to their requests. Basically, that is also what a servlet does, and Tomcat is used as its main framework. </h5>
+                            
+                            <br>
+                            <h6>Download Apache Tomcat <a href="https://tomcat.apache.org/download-70.cgi" target="_blank">here</a>.</h6>
+            
+                            <br>
                         
                         <div class="slider">
                             <ul class="slides">
@@ -126,19 +136,114 @@
                           </div>
                         
                         <h4>Servlet CLASSPATH</h4>
-                        <p> Servlets are not part of Java Platform SE, which is why the user must manually identify the servlet class to the compiler.</p>
+                        <h5> Servlets are not part of Java Platform SE, which is why the user must manually identify the servlet class to the compiler.</h5>
                         
-                        <p>Setup the CLASSPATH using the CATALINA_HOME variable used in the Tomcat setup. The overall PATH should look something like "%CATALINA_HOME%\lib\servlet-api.jar". This should let the compiler identify the class and make servlets usable.</p>
+                        <h5>Setup the CLASSPATH using the CATALINA_HOME variable used in the Tomcat setup. The overall PATH should look something like "%CATALINA_HOME%\lib\servlet-api.jar". This should let the compiler identify the class and make servlets usable.</h5>
                         <img src="./media/images/TomcatSetup/Final.PNG" width="90%" height="auto" border=3>
 
                     </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+        <div class="col s12 m6">
+                <h4 class="promo-caption">
+                    <b>Sample Program</b>
+                </h4>
+                <h5 class="light center"> Sample programs are what give the user, the most basic template for creating the actual program. Servlets contain the code, compilation of the code, and the deployment of a servlet.
+                </h5>
+                        <h4>"Hello World!" program </h4>
+                            <h5> There are plenty of basic codes which show exactly how to create a servlet. But what could beat the original sample code of them all which is a "Hello World" program?</h5>
 
+                        
+                        <h5>Servlets utilize the <b><i>javax.servlet.Servlet interface </i></b> which service HTTP requests and implements.  </h5>
+            
+                        <h5>Sample Code: </h5>
+            
+                        <pre>
+// These are the required libraries
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+// Extend the HttpServlet class
+public class HelloWorld extends HttpServlet {
+
+private String message;
+
+public void init() throws ServletException {
+    // Initialization codes...
+    message = "Hello World";
+    }
+
+public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    // Set the content type for the response
+    response.setContentType("text/html");
+
+    PrintWriter out = response.getWriter();
+    out.println("&lt;h1&gt;" + message + "&lt;/h1&gt;");
+    }
+
+ public void destroy() {
+     // End the session.
+    }
+}
+                        
+                        </pre>
+                        
+                        <h5>
+                            Create a file which should be named HelloWorld.java and contains the code above. Place it in an easy-to-remember location. The location must then be added to the CLASSPATH.
+                        </h5>
+            
+                        <h5>
+                            When your environment is completely set-up, compile your java file with the following code
+                        </h5>
+                        
+                        <pre>
+javac HelloWorld.java
+//note: your servlet interface may not be found at times.
+//use the following code in cmd to compile your program
+//javac -cp .;C:/path/to/lib/servlet-api.jar HelloWorld.java
+                        </pre>
+            
+            <h4>
+                Deployment:
+            </h4>
+            
+            <h5>
+                Copy the class file of your program (HelloWorld.class) into the classes of the WEB-INF directory of the tomcat server(C:/location/of/tomcat/webapps/ROOT/WEB-INF/classes).
+                <br>
+                <br>
+                Next, create the following entries and add them to the web.xml file found in the same directory.
+            </h5>
+            
+            <pre>
+&lt;servlet>
+   &lt;servlet-name>HelloWorld&lt;/servlet-name>
+   &lt;servlet-class>HelloWorld&lt;/servlet-class>
+&lt;/servlet>
+
+&lt;servlet-mapping>
+   &lt;servlet-name>HelloWorld&lt;/servlet-name>
+   &lt;url-pattern>/HelloWorld&lt;/url-pattern>
+&lt;/servlet-mapping>
+            </pre>
+            
+            <h5>
+                Deployment is almost finished. The final step is to run the server by typing the following code:
+            </h5>
+            <pre>
+C:/path/to/tomcat/bin/startup.bat
+            </pre>
+            
+            <h5>
+                Once everything is set, go to the browser and type: <b><i>http://localhost:8080/HelloWorld</i></b>. The result should show the following.
+            </h5>
+            <img src="../../media/images/servlet_success.PNG">
+
+            <h5>
+                This basically gives the user an entire template to use. 
+            </h5>
+
+                    </div>
         
     </div>
 </div>
