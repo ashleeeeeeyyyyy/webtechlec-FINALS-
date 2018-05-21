@@ -14,6 +14,7 @@
     <script href="../css/javascript/script1.js"></script>
     <title> Course Website </title>
     <link rel="stylesheet" type="text/css" href="css/css/styles.css">
+    
 </head>
 <body>
 
